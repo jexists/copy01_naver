@@ -23,10 +23,9 @@
   background-color: #fee; }
   .uphead_wrap #lnb {
     position: absolute;
-    top: 10px;
+    top: 0;
     right: 0;
-    width: auto;
-    font-size: 11px; }
+    width: auto; }
     .uphead_wrap #lnb ul {
       width: auto;
       height: auto; }
@@ -46,22 +45,7 @@ h1 {
   width: 480px;
   height: 50px;
   border: 2px solid #03cf5d;
-  box-sizing: border-box;
-  background-color: #fff; }
-  .search_box form {
-    width: 405px;
-    height: 100%; }
-  .search_box fieldset {
-    width: 100%;
-    height: 100%; }
-  .search_box input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    font-size: 18px; }
-    .search_box input:hover, .search_box input:focus {
-      background-color: #fff;
-      outline: none; }
+  box-sizing: border-box; }
 
 .search_icon {
   float: left;
@@ -99,7 +83,6 @@ h1 {
 
 .keyword {
   float: right;
-  width: 200px;
   margin-left: 30px; }
 
 #contentBox {
@@ -165,63 +148,6 @@ h1 {
   border: 1px solid #dee3eb;
   box-sizing: border-box;
   background-color: #fff; }
-  .login p {
-    width: 280px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 12px;
-    margin: 5px auto;
-    color: #888; }
-  .login div {
-    width: 280px;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: #03cf5d;
-    text-align: center;
-    line-height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    box-sizing: border-box; }
-    .login div a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      font-weight: bold;
-      font-size: 18px; }
-      .login div a:hover, .login div a:focus {
-        font-size: 20px;
-        color: #fff;
-        outline: none; }
-  .login ul {
-    width: 280px;
-    height: 30px;
-    margin: auto;
-    box-sizing: border-box;
-    font-size: 12px; }
-    .login ul li {
-      float: left; }
-      .login ul li:nth-child(1) {
-        position: relative;
-        margin-right: 4px; }
-      .login ul li:nth-child(1):after {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        left: 37px;
-        width: 2px;
-        height: 2px;
-        border-radius: 2px;
-        background-color: #777; }
-      .login ul li:nth-child(3) {
-        float: right; }
-      .login ul li a:hover, .login ul li a:focus {
-        color: inherit;
-        text-decoration: underline; }
 
 .widget {
   width: 100%;
