@@ -118,12 +118,79 @@ h1 {
   background-color: #fee; }
 
 .mainadv {
+  position: relative;
   width: 100%;
   height: 120px;
   margin-top: 0;
   border: 1px solid #dee3eb;
   box-sizing: border-box;
   background-color: #fff; }
+  .mainadv a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: url("../../img/main_adv.jpg") no-repeat 50% 50%/contain; }
+    .mainadv a .smallvideo {
+      width: 180px;
+      height: 100px;
+      padding-top: 25px;
+      box-sizing: border-box;
+      background-color: rgba(51, 51, 51, 0.6);
+      border: 1px #777 solid; }
+      .mainadv a .smallvideo > button {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        border-radius: 50px;
+        background: transparent url("../../img/btn_play.png") no-repeat 50% 50%/contain; }
+      .mainadv a .smallvideo > span {
+        display: none;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.7);
+        line-height: 50px;
+        text-align: center;
+        font-weight: bold;
+        color: #03cf5d;
+        font-size: 35px;
+        text-shadow: 0 0 10px #fff; }
+
+.videopop {
+  position: absolute;
+  left: -52px;
+  top: 20px;
+  z-index: 10;
+  width: 100px;
+  height: 70px;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  background: url("../../img/balloon.png") no-repeat 50% 50%/auto 90%; }
+  .videopop p:nth-of-type(2) {
+    display: none; }
+  .videopop em {
+    color: #03cf5d;
+    font-style: normal; }
+
+.video {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 1080px;
+  height: 600px; }
+  .video .videobtn {
+    position: absolute;
+    top: 10px;
+    right: -50px; }
 
 .newsbox {
   width: 100%;
