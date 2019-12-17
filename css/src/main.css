@@ -133,19 +133,22 @@ h1 {
     box-sizing: border-box;
     background: url("../../img/main_adv.jpg") no-repeat 50% 50%/contain; }
     .mainadv a .smallvideo {
+      position: relative;
       width: 180px;
       height: 100px;
       padding-top: 25px;
       box-sizing: border-box;
-      background-color: rgba(51, 51, 51, 0.6);
+      background-color: rgba(51, 51, 51, 0.7);
       border: 1px #777 solid; }
+      .mainadv a .smallvideo.action {
+        border: 1px #03cf5d solid; }
       .mainadv a .smallvideo > button {
         display: block;
         width: 50px;
         height: 50px;
         margin: auto;
         border-radius: 50px;
-        background: transparent url("../../img/btn_play.png") no-repeat 50% 50%/contain; }
+        background: url("../../img/btn_play.png") no-repeat 50% 50%/contain; }
       .mainadv a .smallvideo > span {
         display: none;
         width: 50px;

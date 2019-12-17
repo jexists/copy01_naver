@@ -4,7 +4,8 @@
 				videoBtn = smallVideo.find('button'),
 				videoNum = smallVideo.find('.videonum'),
 				video = $('.video'),
-				closeBtn = $('.closebtn');
+				closeBtn = $('.closebtn'),
+				loading = $('.loading');
 
 
 	const text = setInterval(function(){
@@ -24,9 +25,9 @@
 			videoNum.text(n);
 			if(n==0){
 			  	video.stop().fadeIn();
+			  	loading.fadeOut();
 			  	videoPop.fadeOut(function(){
 			  		clearInterval(go);
-			  		n=3;
 			  	});
 			  }
 			},1000);
@@ -34,16 +35,20 @@
 
 
 	smallVideo.on('mouseenter',function(){
+		$(this).addClass('action');
 		videoBtn.fadeOut(10,function(){
 			videoNum.show();
+			loading.show();
 			videoNum.css({display:'block'})
 		});
 		setInt();
 	});
 
 	smallVideo.on('mouseleave',function(){
+		$(this).removeClass('action');
 		videoNum.fadeOut(10,function(){videoBtn.show();});
 			clearInterval(go);
+			loading.fadeOut();
 			n=3;
 			videoNum.text(n);
 	});
