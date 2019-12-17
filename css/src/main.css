@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*main.css */
 #wrap {
   width: 100%;
@@ -11,7 +12,9 @@
 #upperhead {
   width: 100%;
   height: 130px;
-  background-color: #ffe; }
+  border-bottom: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  background-color: #fff; }
 
 .uphead_wrap {
   position: relative;
@@ -19,8 +22,7 @@
   height: 100%;
   margin: auto;
   padding: 40px 0;
-  box-sizing: border-box;
-  background-color: #fee; }
+  box-sizing: border-box; }
   .uphead_wrap #lnb {
     position: absolute;
     top: 10px;
@@ -33,15 +35,79 @@
       .uphead_wrap #lnb ul li {
         float: left;
         margin-left: 10px; }
+        .uphead_wrap #lnb ul li a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+
+#lnb ul li a:hover span, #lnb ul li a:focus span {
+  font-weight: bold; }
+
+#lnb ul li a:hover, #lnb ul li a:focus {
+  outline: none; }
+
+#lnb ul li:nth-child(1) a:hover, #lnb ul li:nth-child(1) a:focus {
+  color: inherit;
+  text-decoration: underline; }
+
+#lnb ul li:nth-child(1) {
+  width: 120px; }
+
+#lnb ul li:nth-child(1) span {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 0;
+  height: 0; }
+  #lnb ul li:nth-child(1) span:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 115px;
+    border: solid #333;
+    border-width: 0 1px 1px 0;
+    padding: 2px;
+    transform: rotate(-45deg); }
+
+/* 쥬니어네이버 */
+#lnb ul li:nth-child(2) a:hover span:nth-of-type(1), #lnb ul li:nth-child(2) a:focus span:nth-of-type(1) {
+  color: #01589F; }
+
+#lnb ul li:nth-child(2) a:hover span:nth-of-type(2), #lnb ul li:nth-child(2) a:focus span:nth-of-type(2) {
+  color: #ED8A25; }
+
+#lnb ul li:nth-child(2) a:hover span:nth-of-type(3), #lnb ul li:nth-child(2) a:focus span:nth-of-type(3) {
+  color: #E14135; }
+
+#lnb ul li:nth-child(2) a:hover span:nth-of-type(4), #lnb ul li:nth-child(2) a:focus span:nth-of-type(4) {
+  color: #47A242; }
+
+/* 해피빈 */
+#lnb ul li:nth-child(3) a:hover span:nth-of-type(1), #lnb ul li:nth-child(3) a:focus span:nth-of-type(1) {
+  color: #36AE4B; }
+
+#lnb ul li:nth-child(3) a:hover span:nth-of-type(2), #lnb ul li:nth-child(3) a:focus span:nth-of-type(2) {
+  color: #20983A; }
 
 h1 {
   float: left;
   width: 190px;
   height: 50px;
-  margin-right: 30px;
-  background-color: #03cf5d; }
+  margin-right: 30px; }
+  h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent url("../../img/naver_logo.png") no-repeat 50% 50%/contain; }
+    h1 a:hover, h1 a:focus {
+      transform: scale(1.1);
+      outline: none; }
 
 .search_box {
+  position: relative;
   float: left;
   width: 480px;
   height: 50px;
@@ -63,16 +129,65 @@ h1 {
       background-color: #fff;
       outline: none; }
 
+.keyboard {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  width: 20px;
+  height: 20px; }
+  .keyboard button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent url("../../img/keyboard.png") no-repeat 50% 50%/contain; }
+    .keyboard button:hover, .keyboard button:focus {
+      outline: none;
+      transform: scale(1.1); }
+    .keyboard button.action {
+      background: transparent url("../../img/keyboard_act.png") no-repeat 50% 50%/contain;
+      outline: none; }
+
+.autokey {
+  position: absolute;
+  top: 22px;
+  right: 11px;
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid #03cf5d;
+  border-bottom: 5px none;
+  border-right: 5px solid transparent;
+  border-left: 5px solid  transparent; }
+  .autokey.action {
+    transform: rotate(180deg); }
+  .autokey button {
+    display: block;
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%);
+    background-color: transparent; }
+    .autokey button:hover, .autokey button:focus {
+      outline: none; }
+
 .search_icon {
   float: left;
   width: 50px;
   height: 50px;
   background-color: #03cf5d; }
+  .search_icon button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent url("../../img/search_icon.png") no-repeat 50% 50%/55% auto; }
+    .search_icon button:hover, .search_icon button:focus {
+      background-size: 70% auto;
+      outline: none; }
 
 #lowerhead {
   width: 100%;
   height: 50px;
-  background-color: #eef; }
+  background-color: #fff;
+  border-bottom: 1px solid #cdcdcd;
+  box-sizing: border-box; }
 
 .lowhead_wrap {
   width: 1080px;
@@ -81,26 +196,127 @@ h1 {
   line-height: 50px; }
 
 #gnb {
-  width: 720px;
+  width: 790px;
   height: auto; }
   #gnb ul {
     float: left;
-    height: auto; }
+    height: auto;
+    font-weight: bold;
+    font-size: 16px; }
     #gnb ul:first-of-type {
-      width: 300px; }
+      width: 330px;
+      color: #03cf5d; }
+      #gnb ul:first-of-type li:nth-child(6) {
+        text-transform: capitalize; }
+      #gnb ul:first-of-type li:nth-child(7) span {
+        display: block;
+        float: left;
+        width: 15px;
+        height: 15px;
+        margin-top: 18px;
+        background: url("../../img/tv_icon.png") no-repeat 50% 50%/contain; }
     #gnb ul:nth-of-type(2) {
-      width: 370px; }
+      width: 380px; }
     #gnb ul li {
       float: left;
-      margin-left: 5px; }
+      margin-left: 7px;
+      padding: 0 1px; }
+      #gnb ul li a:hover, #gnb ul li a:focus {
+        outline: none;
+        font-style: italic; }
   #gnb .moreBtn {
+    position: relative;
     float: left;
-    width: 50px; }
+    width: 70px;
+    height: auto;
+    margin-left: 10px; }
+    #gnb .moreBtn:before {
+      content: " ";
+      position: absolute;
+      top: 15px;
+      left: -8px;
+      width: 0;
+      height: 18px;
+      border-left: 1px solid #dee3eb; }
+    #gnb .moreBtn button {
+      display: block;
+      float: left;
+      width: 100%;
+      height: 100%;
+      margin-top: 14px;
+      text-indent: -8px;
+      background-color: transparent;
+      color: inherit;
+      font-size: 15px;
+      font-weight: bold; }
+      #gnb .moreBtn button span {
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 5;
+        width: 0;
+        height: 0; }
+        #gnb .moreBtn button span:before {
+          content: " ";
+          display: inline-block;
+          position: absolute;
+          top: -15px;
+          left: 52px;
+          border: solid #333;
+          border-width: 0 1px 1px 0;
+          padding: 3px;
+          transform: rotate(40deg); }
 
 .keyword {
   float: right;
   width: 200px;
-  margin-left: 30px; }
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+  overflow: hidden; }
+  .keyword .keymore {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 0;
+    height: 0; }
+    .keyword .keymore:before {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      left: 180px;
+      border: solid #333;
+      border-width: 0 1px 1px 0;
+      padding: 3px;
+      transform: rotate(40deg); }
+  .keyword ol {
+    position: relative;
+    top: -49px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-top: -10px; }
+    .keyword ol li {
+      width: 100%;
+      height: 49px;
+      /* border: 1px solid #333; */
+      line-height: 49px; }
+      .keyword ol li span {
+        display: block;
+        float: left;
+        width: 22px;
+        height: 49px;
+        text-align: center;
+        font-weight: bold;
+        color: #03cf5d; }
+      .keyword ol li p {
+        float: left;
+        width: 178px;
+        height: 49px; }
 
 #contentBox {
   width: 1100px;
@@ -142,7 +358,7 @@ h1 {
       border: 1px #777 solid; }
       .mainadv a .smallvideo.action {
         border: 1px #03cf5d solid; }
-      .mainadv a .smallvideo > button {
+      .mainadv a .smallvideo > .load_start {
         display: block;
         width: 50px;
         height: 50px;
@@ -308,7 +524,8 @@ h1 {
         float: right; }
       .login ul li a:hover, .login ul li a:focus {
         color: inherit;
-        text-decoration: underline; }
+        text-decoration: underline;
+        outline: none; }
 
 .widget {
   width: 100%;

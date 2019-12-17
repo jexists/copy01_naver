@@ -1,7 +1,7 @@
 (function($){
 	const videoPop = $('.videopop'),
 				smallVideo = $('.smallvideo'),
-				videoBtn = smallVideo.find('button'),
+				videoBtn = smallVideo.find('.load_start'),
 				videoNum = smallVideo.find('.videonum'),
 				video = $('.video'),
 				closeBtn = $('.closebtn'),

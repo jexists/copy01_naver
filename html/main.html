@@ -3,7 +3,7 @@
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="웹페이지 실습에 따른 목차구성">
   <meta name="keyword" content="html, css, js, web, design, 웹디자인">
@@ -44,22 +44,31 @@
   <header id="headBox">
     <div id="upperhead">
       <div class="uphead_wrap">
-       <h1><a href="#"><span>로고</span></a></h1>
+       <h1><a href="#"><span class="hd">네이버</span></a></h1>
        <div class="search_box">
          <form action="#" method="get">
            <fieldset>
              <legend>네이버 검색창입니다.</legend>
-             <label for="serchBar" class="hd"> 검색창</label>
+             <label for="searchBar" class="hd"> 검색창</label>
              <input type="text" id="searchBar" name="searchBar" value="" />
            </fieldset>
          </form>
+       <div class="keyboard">
+         <button type="button"></button>
        </div>
-       <div class="search_icon"></div>
+       <div class="autokey">
+         <button type="button"></button>
+         <div></div>
+       </div>
+       </div>
+       <div class="search_icon">
+         <button type="button"></button>
+       </div>
       <div id="lnb">
         <ul>
-          <li><a href="#">네이버를 시작페이지로</a></li>
-          <li><a href="#">쥬니어네이버</a></li>
-          <li><a href="#">해피빈</a></li>
+          <li><a href="#">네이버를 시작페이지로</a> <span></span></li>
+          <li><a href="#"><span>쥬</span><span>니</span><span>어</span><span>네이버</span></a></li>
+          <li><a href="#"><span>해피</span><span>빈</span></a></li>
         </ul>
       </div>
       </div>
@@ -74,7 +83,7 @@
           <li><a href="#">지식iN</a></li>
           <li><a href="#">쇼핑</a></li>
           <li><a href="#">pay</a></li>
-          <li><a href="#">TV</a></li>
+          <li><a href="#"><span></span>TV</a></li>
         </ul>
         <ul>
           <li><a href="#">사전</a></li>
@@ -87,11 +96,33 @@
           <li><a href="#">책</a></li>
           <li><a href="#">웹툰</a></li>
         </ul>
-        <div class="moreBtn">더보기</div>
+        <div class="moreBtn">
+          <button type="button">더보기<span></span></button>
+        </div>
       </div>
       <div class="keyword">
+        <div class="keymore"></div>
         <ol>
-          <li>1.네이버</li>
+          <li><span>1</span><p></p></li>
+          <li><span>2</span><p></p></li>
+          <li><span>3</span><p></p></li>
+          <li><span>4</span><p></p></li>
+          <li><span>5</span><p></p></li>
+          <li><span>6</span><p></p></li>
+          <li><span>7</span><p></p></li>
+          <li><span>8</span><p></p></li>
+          <li><span>9</span><p></p></li>
+          <li><span>10</span><p></p></li>
+          <li><span>11</span><p></p></li>
+          <li><span>12</span><p></p></li>
+          <li><span>13</span><p></p></li>
+          <li><span>14</span><p></p></li>
+          <li><span>15</span><p></p></li>
+          <li><span>16</span><p></p></li>
+          <li><span>17</span><p></p></li>
+          <li><span>18</span><p></p></li>
+          <li><span>19</span><p></p></li>
+          <li><span>20</span><p></p></li>
         </ol>
       </div>
       </div>
@@ -105,13 +136,14 @@
             <svg class="loading" width="180" height="100">
               <circle class="loadingC" cx="90" cy="50" r="25" stroke="#00ab33" stroke-width="3" fill="transparent" stroke-dasharray="1" stroke-dashoffset="0" data-per="100"></circle>
             </svg>
-            <button type="button"></button>
+            <div class="load_start" tabindex="0"></div>
             <span class="videonum">3</span>
           </div>
         </a>
         <div class="video"> <!-- w560 h315 -->
+
           <div class="videobtn"><button type="button" class="closebtn">종료</button></div>
-          <iframe width="1080" height="600" src="https://www.youtube.com/embed/TwjuG6-84WI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="1080" height="600" src="https://www.youtube.com/embed/TwjuG6-84WI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="videopop">
           <p><em>마우스</em>를 올려 <br /> 동영상을</p>
@@ -215,5 +247,7 @@
  <!-- <script src="../js/src/main.js"></script> -->
  <script src="../js/src/mainadv.js"></script>
  <script src="../js/src/main_svg.js"></script>
+ <script src="../js/src/autokey.js"></script>
+ <script src="../js/src/keyword.js"></script>
 </body>
 </html>
