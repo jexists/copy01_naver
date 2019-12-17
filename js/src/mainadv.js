@@ -20,9 +20,9 @@
 	let go;
 	const setInt = function(){
 		go = setInterval(function(){
-				n--;
-			  videoNum.text(n);
-			  if(n==0){
+			n--;
+			videoNum.text(n);
+			if(n==0){
 			  	video.stop().fadeIn();
 			  	videoPop.fadeOut(function(){
 			  		clearInterval(go);
@@ -39,16 +39,17 @@
 			videoNum.css({display:'block'})
 		});
 		setInt();
-
 	});
 
 	smallVideo.on('mouseleave',function(){
 		videoNum.fadeOut(10,function(){videoBtn.show();});
+			clearInterval(go);
+			n=3;
+			videoNum.text(n);
 	});
 
 	closeBtn.on('click',function(){
 		video.fadeOut();
-		// n=3;
 	});
 
 
