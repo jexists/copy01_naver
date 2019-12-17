@@ -151,6 +151,11 @@ h1 {
         background: url("../../img/btn_play.png") no-repeat 50% 50%/contain; }
       .mainadv a .smallvideo > span {
         display: none;
+        position: absolute;
+        left: 90px;
+        top: 50px;
+        transform: translate(-50%, -50%);
+        z-index: 5;
         width: 50px;
         height: 50px;
         margin: auto;
@@ -197,7 +202,19 @@ h1 {
 
 .newsbox {
   width: 100%;
-  height: 300px;
+  height: 300px; }
+
+.keynews {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border: 1px solid #dee3eb;
+  box-sizing: border-box;
+  background-color: #fff; }
+
+.catnews {
+  width: 100%;
+  height: 240px;
   margin-top: 10px;
   border: 1px solid #dee3eb;
   box-sizing: border-box;

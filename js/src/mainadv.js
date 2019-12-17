@@ -25,7 +25,7 @@
 			videoNum.text(n);
 			if(n==0){
 			  	video.stop().fadeIn();
-			  	loading.fadeOut();
+			  	loading.stop().fadeOut();
 			  	videoPop.fadeOut(function(){
 			  		clearInterval(go);
 			  	});
@@ -36,7 +36,7 @@
 
 	smallVideo.on('mouseenter',function(){
 		$(this).addClass('action');
-		videoBtn.fadeOut(10,function(){
+		videoBtn.stop().fadeOut(10,function(){
 			videoNum.show();
 			loading.show();
 			videoNum.css({display:'block'})
@@ -48,7 +48,7 @@
 		$(this).removeClass('action');
 		videoNum.fadeOut(10,function(){videoBtn.show();});
 			clearInterval(go);
-			loading.fadeOut();
+			loading.stop().fadeOut();
 			n=3;
 			videoNum.text(n);
 	});
