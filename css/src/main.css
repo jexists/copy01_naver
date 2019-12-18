@@ -625,7 +625,7 @@ h1 {
     height: 100%; }
     #lowerfoot .naverper dl {
       width: 100%;
-      height: 20px; }
+      height: 25px; }
       #lowerfoot .naverper dl dt {
         float: left;
         width: 90px;
@@ -634,12 +634,27 @@ h1 {
         font-weight: bold; }
       #lowerfoot .naverper dl dd {
         float: left;
+        position: relative;
         width: auto;
         color: #888;
         padding: 0 15px;
         font-size: 13px;
-        line-height: 20px; }
+        line-height: 25px; }
+        #lowerfoot .naverper dl dd:first-of-type:after {
+          display: none; }
+        #lowerfoot .naverper dl dd:after {
+          content: " ";
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0px;
+          margin: auto;
+          width: 0;
+          height: 14px;
+          border-right: 2px solid #e8e9ec; }
   #lowerfoot .whale {
+    position: relative;
     float: right;
     width: 200px;
     height: 100%;
@@ -649,9 +664,13 @@ h1 {
       content: " ";
       display: block;
       position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
       width: 0;
-      height: 10px;
-      border-right: 1px solid #f1f3f6; }
+      height: 50px;
+      border-right: 1px solid #e8e9ec; }
     #lowerfoot .whale dl {
       position: relative;
       width: 100%;
@@ -675,19 +694,32 @@ h1 {
         margin-top: 5px;
         color: #888; }
   #lowerfoot .proj {
+    position: relative;
     float: right;
     width: 150px;
     height: 100%; }
+    #lowerfoot .proj:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -8px;
+      margin: auto;
+      width: 0;
+      height: 50px;
+      border-right: 1px solid #e8e9ec; }
     #lowerfoot .proj dl {
       position: relative;
       width: 100%;
       height: 100%; }
       #lowerfoot .proj dl dt {
-        font-weight: bold; }
+        font-weight: bold;
+        text-indent: 15px; }
       #lowerfoot .proj dl .ftimg {
         position: absolute;
         top: 0;
-        right: 15px;
+        right: 0;
         width: 60px;
         height: 60px; }
         #lowerfoot .proj dl .ftimg a {
@@ -698,13 +730,14 @@ h1 {
           #lowerfoot .proj dl .ftimg a:hover, #lowerfoot .proj dl .ftimg a:focus {
             transform: scale(1.1); }
       #lowerfoot .proj dl dd {
+        text-indent: 15px;
         margin-top: 5px;
         color: #888; }
 
 #fnb {
   width: 100%;
   height: 150px;
-  padding: 30px 0;
+  padding: 25px 0;
   box-sizing: border-box;
   border-top: 1px solid #f1f3f6; }
   #fnb .fnb_wrap {
@@ -716,16 +749,24 @@ h1 {
     margin: auto;
     color: #888; }
     #fnb ul li {
+      position: relative;
       float: left;
       margin-right: 20px; }
       #fnb ul li:nth-child(5) {
         font-weight: bold; }
+      #fnb ul li:nth-child(1):after {
+        display: none; }
       #fnb ul li:after {
         content: " ";
         display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -10px;
+        margin: auto;
         width: 0;
-        height: 10px;
-        border-right: 1px solid #f1f3f6; }
+        height: 14px;
+        border-right: 2px solid #e8e9ec; }
 
 .copyright {
   font-weight: bold;
