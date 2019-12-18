@@ -6,8 +6,11 @@ $white: #fff;
 $border: #dee3eb;
 $softT: #888;
 $borderB: #cdcdcd;
+$softB: #f1f3f6;
 //line
 $line: (1px,3px,10px,30px); //nth($line,1);
 $box: 1px solid #dee3eb;
+$innerLine: 1px solid #d1d8e4;
+$softLine: 1px solid $softB; 
 
 //font
