@@ -2,6 +2,7 @@
 /*main.css */
 #wrap {
   width: 100%;
+  min-width: 1100px;
   height: auto;
   background-color: #f2f4f7; }
 
@@ -190,13 +191,14 @@ h1 {
   box-sizing: border-box; }
 
 .lowhead_wrap {
+  position: relative;
   width: 1080px;
   height: 100%;
   margin: auto;
   line-height: 50px; }
 
 #gnb {
-  width: 790px;
+  width: 805px;
   height: auto; }
   #gnb ul {
     float: left;
@@ -229,7 +231,7 @@ h1 {
     float: left;
     width: 70px;
     height: auto;
-    margin-left: 10px; }
+    margin-left: 25px; }
     #gnb .moreBtn:before {
       content: " ";
       position: absolute;
@@ -315,7 +317,7 @@ h1 {
         color: #03cf5d; }
       .keyword ol li p {
         float: left;
-        width: 178px;
+        width: 176px;
         height: 49px; }
 
 #contentBox {
@@ -347,7 +349,10 @@ h1 {
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background: url("../../img/main_adv.jpg") no-repeat 50% 50%/contain; }
+    background: url("../../img/adv/main_adv.jpg") no-repeat 50% 50%/contain; }
+    .mainadv a:hover, .mainadv a:focus {
+      background-size: 103% auto;
+      outline: none; }
     .mainadv a .smallvideo {
       position: relative;
       width: 180px;
@@ -557,7 +562,10 @@ h1 {
   margin-top: 10px;
   border: 1px solid #dee3eb;
   box-sizing: border-box;
-  background-color: #fff; }
+  background-color: #fff;
+  /*   a{display: block; width: 100%; height: 100%;
+  background: url($url+"adv/foot_adv.png") no-repeat 15% 100% / auto 100%;
+ &:hover,&:focus{background-size: auto 103%; outline: none;}} */ }
 
 #footBox {
   width: 100%;
@@ -773,3 +781,116 @@ h1 {
   text-transform: capitalize; }
   .copyright span {
     text-transform: uppercase; }
+
+.keypopup {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1020;
+  width: 340px;
+  height: 340px;
+  background-color: #fff;
+  border: 1px solid #d1d8e4;
+  box-sizing: border-box;
+  border-bottom: none; }
+
+.keypopbox {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box; }
+  .keypopbox h3 {
+    float: left;
+    width: 50%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px; }
+  .keypopbox > p {
+    float: left;
+    width: 50%;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+    font-size: 12px;
+    color: #888; }
+  .keypopbox .oneto20 {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 270px;
+    border-bottom: 1px solid #f1f3f6; }
+    .keypopbox .oneto20 li {
+      float: left;
+      width: 100%;
+      height: auto; }
+      .keypopbox .oneto20 li:last-child dd {
+        display: none; }
+      .keypopbox .oneto20 li:last-child dl {
+        margin-top: 0; }
+      .keypopbox .oneto20 li:first-child dt {
+        left: 0; }
+      .keypopbox .oneto20 li:last-child dt {
+        right: 0; }
+      .keypopbox .oneto20 li dl {
+        width: 100%;
+        height: auto;
+        margin-top: 44px; }
+        .keypopbox .oneto20 li dl dt {
+          position: absolute;
+          top: 0;
+          width: 50%;
+          height: 25px;
+          margin-top: 10px;
+          border: 1px solid #dee3eb;
+          box-sizing: border-box;
+          background-color: #fff;
+          margin-bottom: 10px;
+          box-sizing: border-box;
+          line-height: 23px;
+          text-align: center;
+          font-size: 14px;
+          background-color: #fff; }
+          .keypopbox .oneto20 li dl dt.action {
+            background-color: #f1f3f6;
+            color: #888; }
+          .keypopbox .oneto20 li dl dt a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+        .keypopbox .oneto20 li dl dd {
+          width: 100%;
+          height: 230px;
+          /* padding-top: 44px; box-sizing:border-box; */ }
+          .keypopbox .oneto20 li dl dd ol {
+            width: 100%;
+            height: 230px;
+            font-size: 14px;
+            line-height: 22px; }
+            .keypopbox .oneto20 li dl dd ol li {
+              width: 100%;
+              height: 22px; }
+              .keypopbox .oneto20 li dl dd ol li span {
+                display: block;
+                float: left;
+                width: 30px;
+                height: 22px;
+                text-align: center;
+                font-weight: bold; }
+              .keypopbox .oneto20 li dl dd ol li a {
+                display: block;
+                float: left;
+                width: 275px;
+                height: 22px; }
+                .keypopbox .oneto20 li dl dd ol li a:hover, .keypopbox .oneto20 li dl dd ol li a:focus {
+                  outline: none;
+                  text-decoration: underline; }
+
+.keylower {
+  float: left;
+  width: 100%;
+  height: 25px;
+  font-size: 13px;
+  text-indent: 10px;
+  line-height: 25px;
+  color: #888; }

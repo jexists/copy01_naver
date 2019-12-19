@@ -1,3 +1,4 @@
+	let n=0;
 (function($){
 	const nowWord = ["유재석","유산슬","네이버","유재석","유산슬","네이버","유재석","유산슬","네이버","유재석","유산슬","네이버","유재석","유산슬","네이버","유재석","유산슬","네이버","유재석","유산슬"];
 
@@ -13,7 +14,7 @@
 	liClone.prependTo(keywordOl)
 
 	// console.log(nowWord.length);
-	let n=1;
+
 	let timed = 4000;
 
 	setInterval(function(){

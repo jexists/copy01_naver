@@ -1,7 +1,7 @@
 @import "../_basic/var";
 $url:"../../img/";
 
-#wrap{width: 100%; height: auto; background-color: #f2f4f7;}
+#wrap{width: 100%; min-width:1100px; height: auto; background-color: #f2f4f7;}
 #headBox{width: 100%; height: 180px;}
 
 #upperhead{width: 100%; height: 130px; border-bottom: $softLine; box-sizing: border-box; background-color: $white;}
@@ -60,8 +60,8 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
  &:hover,&:focus{background-size: 70% auto; outline: none;}}}
 
 #lowerhead{width: 100%; height: 50px; background-color: $white; border-bottom: $innerLine; box-sizing:border-box;}
-.lowhead_wrap{width: 1080px; height: 100%; margin: auto; line-height: 50px;}
-#gnb{ width: 790px; height: auto;
+.lowhead_wrap{position:relative; width: 1080px; height: 100%; margin: auto; line-height: 50px;}
+#gnb{ width: 805px; height: auto;
  ul{float: left; height: auto; font-weight: bold; font-size: 16px;
  &:first-of-type{width: 330px; color:$green;
   li:nth-child(6){text-transform: capitalize;}
@@ -70,7 +70,7 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
  &:nth-of-type(2){width: 380px;}
  	li{float: left; margin-left: 7px; padding: 0 1px;
     a:hover,a:focus{outline: none; font-style: italic;}}}
-.moreBtn{position:relative; float: left; width: 70px; height: auto; margin-left: 10px;
+.moreBtn{position:relative; float: left; width: 70px; height: auto; margin-left: 25px;
   &:before{content: " "; position: absolute; top:15px; left: -8px;
     width: 0; height: 18px; border-left: $softLine;}
  button{display:block; float: left; width: 100%; height: 100%; margin-top: 14px; text-indent: -8px;
@@ -83,15 +83,15 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
   li{width: 100%; height: 49px; /* border: 1px solid #333; */ line-height: 49px;
     span{display:block; float: left; width: 22px; height: 49px;
       text-align: center; font-weight: bold; color:$green;}
-    p{float: left;width: 178px; height: 49px;}}}}
+    p{float: left;width: 176px; height: 49px;}}}}
 
 #contentBox{width: 1100px; height: auto; min-height: 500px; margin: auto;}
 #mainConts{float:left; width: 750px; height: auto; min-height: 500px; 
 	padding: 10px; box-sizing: border-box; background-color: #fee;}
 .mainadv{position:relative; width: 100%; height: 120px; @include box(0);
  a{display:block; width: 100%; height: 100%; padding: 10px; box-sizing:border-box;
- background: url($url+"main_adv.jpg") no-repeat 50% 50% / contain;
- // &:hover,&:focus{outline: 1px;}
+ background: url($url+"adv/main_adv.jpg") no-repeat 50% 50% / contain;
+ &:hover,&:focus{background-size: 103% auto; outline: none;}
  .smallvideo{position: relative; width: 180px; height: 100px; padding-top: 25px; 
  	box-sizing:border-box; background-color: rgba(#333,0.7);
  	border: 1px #777 solid;
@@ -136,10 +136,15 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
    	width: 2px; height: 2px; border-radius: 2px; background-color: #777; }
    &:nth-child(3){float: right;}
   a:hover,a:focus{color: inherit; text-decoration: underline; outline: none;}}}}
+
 .widget{width: 100%; height: 140px; @include box;}
 .sideadv{width: 100%; height: 150px; @include box;}
 .shopping{width: 100%; height: 900px; @include box;}
-.footadv{width: 100%; height: 150px; @include box;}
+.footadv{width: 100%; height: 150px; @include box; 
+/*   a{display: block; width: 100%; height: 100%;
+  background: url($url+"adv/foot_adv.png") no-repeat 15% 100% / auto 100%;
+ &:hover,&:focus{background-size: auto 103%; outline: none;}} */}
+
 
 #footBox{width: 100%; height: auto; background-color: #fff; font-size: 14px;
  a:hover,a:focus{ outline:none; text-decoration: underline;}}
