@@ -332,8 +332,7 @@ h1 {
   height: auto;
   min-height: 500px;
   padding: 10px;
-  box-sizing: border-box;
-  background-color: #fee; }
+  box-sizing: border-box; }
 
 .mainadv {
   position: relative;
@@ -456,6 +455,54 @@ h1 {
   border: 1px solid #dee3eb;
   box-sizing: border-box;
   background-color: #fff; }
+  .textadv ul {
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box; }
+    .textadv ul li {
+      float: left;
+      width: 50%;
+      height: 100%;
+      font-size: 12px; }
+      .textadv ul li:nth-child(1) div {
+        background: url("../../img/adv/textadv_01.jpg") no-repeat 50% 50%/contain; }
+      .textadv ul li:nth-child(2) div {
+        background: url("../../img/adv/textadv_02.png") no-repeat 50% 50%/contain; }
+      .textadv ul li a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .textadv ul li a:hover, .textadv ul li a:focus {
+          outline: none; }
+        .textadv ul li a:hover div, .textadv ul li a:focus div {
+          background-size: 105%; }
+        .textadv ul li a:hover dl, .textadv ul li a:focus dl {
+          text-decoration: underline; }
+      .textadv ul li div {
+        float: left;
+        width: 170px;
+        height: 90px; }
+      .textadv ul li p {
+        float: left;
+        width: 155px;
+        height: 25px;
+        margin-left: 15px;
+        margin-top: 5px;
+        line-height: 25px;
+        color: #03cf5d;
+        font-weight: bold; }
+      .textadv ul li dl {
+        float: left;
+        width: 155px;
+        height: 60px;
+        margin-left: 15px; }
+        .textadv ul li dl dt {
+          font-weight: bold;
+          font-size: 16px; }
+        .textadv ul li dl dd {
+          margin-top: 5px;
+          word-break: keep-all; }
 
 #sideConts {
   float: right;
@@ -463,8 +510,7 @@ h1 {
   height: auto;
   min-height: 500px;
   padding: 10px 10px 10px 0;
-  box-sizing: border-box;
-  background-color: #efe; }
+  box-sizing: border-box; }
 
 .login {
   width: 100%;
@@ -567,7 +613,7 @@ h1 {
     display: block;
     width: 100%;
     height: 100%;
-    background: url("../../img/adv/foot_adv.png") no-repeat 15% 100%/auto 100%; }
+    background: url("../../img/adv/foot_adv.jpg") no-repeat 45% 100%/auto 100%; }
     .footadv a:hover, .footadv a:focus {
       background-size: auto 103%;
       outline: none; }
