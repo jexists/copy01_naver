@@ -1,0 +1,25 @@
+// _mixin.scss
+
+
+
+//내부에 있는 text 숨기는 기능 처리하기 
+ @mixin hdTxt(){
+ display:block; position: absolute; z-index: -1;
+	  	overflow: hidden; width: 0; height: 0;}
+
+//a요소 사이트 설정, 내부 span요소를 숨기게 만들기
+@mixin link($w:100%, $h:100%){
+	display: block; width: $w; height: $h;
+	@content;
+	>span{@include hdTxt;}}
+
+// ===========
+@mixin box($top:10px){margin-top: $top; border:$box; box-sizing: border-box;background-color: $white;}
+
+@mixin arrow($deg:-45deg, $top:-10px, $left:115px, $bw:1px, $p:2px){
+	display:block; position:relative; left:0; top: 0; 
+	z-index:5; width: 0; height:0;
+  &:before{content: " "; display: inline-block; position: absolute; top:$top; left: $left; border: solid #333;
+    border-width: 0 $bw $bw 0; padding: $p; transform:rotate($deg);}}
+
+@mixin footTx{font-size: 14px; font-weight: bold;}

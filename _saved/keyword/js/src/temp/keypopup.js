@@ -1,5 +1,5 @@
 (function(){
-	const nowWord = ["유승호","유재석","션","위너","은지원","민경훈","송민호","설민석","김수현","유병재","이효리","네이버","유재석","유산슬","네이버","유재석","유산슬","유승호","유재석","민경훈"];
+	const nowWord = ["유재석","유산슬","네이버","유재석","유산슬","네이버","유재석","유산슬","네이버","유재석","유산슬","네이버","유재석","유산슬","네이버","유재석","유산슬","네이버","유재석","유산슬"];
 
 	const keyword = $('.keyword');
 	const keyPopup = $('.keypopup');
@@ -31,6 +31,11 @@
 	};
 
 	popDtLink.on('click',function(){
+		/*popLi.find('dt').removeClass('action');
+		$(this).parent().addClass('action');
+		popLi.find('dd').hide();
+		popLi.eq(thisLi).find('dd').show();
+		*/
 		thisLi = $(this).parents('li').index();
 		ThisCount(thisLi);
 	});
@@ -38,9 +43,12 @@
 	let timed = 4000;
 	let k=0;
 	let key;
-
+	// keywordOl.css({transform:'translateY(-49px)'});
 	const GoKey = function(){
 		key = setInterval(function(){
+
+		popLi.find('dd').find('a').css({fontWeight:'normal',color:'#333'});
+		popDd.eq(k+1).css({fontWeight:'bold',color:'#00f'});
 		k++;
 		keywordOl.animate({top: -49 * (k+1) + 'px'},timed/4,  function(){
 			if(k<10){ 
@@ -51,26 +59,24 @@
 				k=0;
 				keywordOl.css({top:-49 +'px'});
 				ThisCount(0);
+				//StopKey();
+				//Gokey();
 			}
 		});
+		//console.log(k);
+
 	},timed);
 	};
-	
 	const StopKey = function(){
 		clearInterval(key);
 	};
 	GoKey();
 
 
-	keywordLi.on('mouseenter',function(){
+	keyword.on('mouseenter',function(){
 		keyPopup.stop().fadeIn();
 		StopKey();
-		let i = $(this).index();
-		popLi.find('dd').find('a').css({fontWeight:'normal'});
-		popDd.eq(i-1).css({fontWeight:'bold'});
-
 	});
-
 	keyPopup.on('mouseleave',function(){
 		$(this).stop().fadeOut();
 		GoKey();

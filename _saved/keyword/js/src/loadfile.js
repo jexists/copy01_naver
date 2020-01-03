@@ -12,8 +12,7 @@
 	};
 
 	keywordPopup.load('./temp/keypopup.html',function(){
-		JsLink('date');
-		JsLink('keypopup');
+		JsLink('keypopup')
 	});
 
 

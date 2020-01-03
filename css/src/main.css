@@ -1,947 +1,363 @@
 @charset "UTF-8";
 /*main.css */
-#wrap {
-  width: 100%;
-  min-width: 1100px;
-  height: auto;
-  background-color: #f2f4f7; }
+#wrap { width: 100%; min-width: 1100px; height: auto; background-color: #f2f4f7; }
 
-#headBox {
-  width: 100%;
-  height: 180px; }
+#headBox { width: 100%; height: 180px; }
 
-#upperhead {
-  width: 100%;
-  height: 130px;
-  border-bottom: 1px solid #f1f3f6;
-  box-sizing: border-box;
-  background-color: #fff; }
+#upperhead { width: 100%; height: 130px; border-bottom: 1px solid #f1f3f6; box-sizing: border-box; background-color: #fff; }
 
-.uphead_wrap {
-  position: relative;
-  width: 1080px;
-  height: 100%;
-  margin: auto;
-  padding: 40px 0;
-  box-sizing: border-box; }
-  .uphead_wrap #lnb {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    width: auto;
-    font-size: 11px; }
-    .uphead_wrap #lnb ul {
-      width: auto;
-      height: auto; }
-      .uphead_wrap #lnb ul li {
-        float: left;
-        margin-left: 10px; }
-        .uphead_wrap #lnb ul li a {
-          display: block;
-          width: 100%;
-          height: 100%; }
+.uphead_wrap { position: relative; width: 1080px; height: 100%; margin: auto; padding: 40px 0; box-sizing: border-box; }
 
-#lnb ul li a:hover span, #lnb ul li a:focus span {
-  font-weight: bold; }
+.uphead_wrap #lnb { position: absolute; top: 10px; right: 0; width: auto; font-size: 11px; }
 
-#lnb ul li a:hover, #lnb ul li a:focus {
-  outline: none; }
+.uphead_wrap #lnb ul { width: auto; height: auto; }
 
-#lnb ul li:nth-child(1) a:hover, #lnb ul li:nth-child(1) a:focus {
-  color: inherit;
-  text-decoration: underline; }
+.uphead_wrap #lnb ul li { float: left; margin-left: 10px; }
 
-#lnb ul li:nth-child(1) {
-  width: 120px; }
+.uphead_wrap #lnb ul li a { display: block; width: 100%; height: 100%; }
 
-#lnb ul li:nth-child(1) span {
-  display: block;
-  position: relative;
-  left: 0;
-  top: 0;
-  z-index: 5;
-  width: 0;
-  height: 0; }
-  #lnb ul li:nth-child(1) span:before {
-    content: " ";
-    display: inline-block;
-    position: absolute;
-    top: -10px;
-    left: 115px;
-    border: solid #333;
-    border-width: 0 1px 1px 0;
-    padding: 2px;
-    transform: rotate(-45deg); }
+#lnb ul li a:hover span, #lnb ul li a:focus span { font-weight: bold; }
+
+#lnb ul li a:hover, #lnb ul li a:focus { outline: none; }
+
+#lnb ul li:nth-child(1) a:hover, #lnb ul li:nth-child(1) a:focus { color: inherit; text-decoration: underline; }
+
+#lnb ul li:nth-child(1) { width: 120px; }
+
+#lnb ul li:nth-child(1) span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+#lnb ul li:nth-child(1) span:before { content: " "; display: inline-block; position: absolute; top: -10px; left: 115px; border: solid #333; border-width: 0 1px 1px 0; padding: 2px; transform: rotate(-45deg); }
 
 /* 쥬니어네이버 */
-#lnb ul li:nth-child(2) a:hover span:nth-of-type(1), #lnb ul li:nth-child(2) a:focus span:nth-of-type(1) {
-  color: #01589F; }
+#lnb ul li:nth-child(2) a:hover span:nth-of-type(1), #lnb ul li:nth-child(2) a:focus span:nth-of-type(1) { color: #01589F; }
 
-#lnb ul li:nth-child(2) a:hover span:nth-of-type(2), #lnb ul li:nth-child(2) a:focus span:nth-of-type(2) {
-  color: #ED8A25; }
+#lnb ul li:nth-child(2) a:hover span:nth-of-type(2), #lnb ul li:nth-child(2) a:focus span:nth-of-type(2) { color: #ED8A25; }
 
-#lnb ul li:nth-child(2) a:hover span:nth-of-type(3), #lnb ul li:nth-child(2) a:focus span:nth-of-type(3) {
-  color: #E14135; }
+#lnb ul li:nth-child(2) a:hover span:nth-of-type(3), #lnb ul li:nth-child(2) a:focus span:nth-of-type(3) { color: #E14135; }
 
-#lnb ul li:nth-child(2) a:hover span:nth-of-type(4), #lnb ul li:nth-child(2) a:focus span:nth-of-type(4) {
-  color: #47A242; }
+#lnb ul li:nth-child(2) a:hover span:nth-of-type(4), #lnb ul li:nth-child(2) a:focus span:nth-of-type(4) { color: #47A242; }
 
 /* 해피빈 */
-#lnb ul li:nth-child(3) a:hover span:nth-of-type(1), #lnb ul li:nth-child(3) a:focus span:nth-of-type(1) {
-  color: #36AE4B; }
+#lnb ul li:nth-child(3) a:hover span:nth-of-type(1), #lnb ul li:nth-child(3) a:focus span:nth-of-type(1) { color: #36AE4B; }
 
-#lnb ul li:nth-child(3) a:hover span:nth-of-type(2), #lnb ul li:nth-child(3) a:focus span:nth-of-type(2) {
-  color: #20983A; }
+#lnb ul li:nth-child(3) a:hover span:nth-of-type(2), #lnb ul li:nth-child(3) a:focus span:nth-of-type(2) { color: #20983A; }
 
-h1 {
-  float: left;
-  width: 190px;
-  height: 50px;
-  margin-right: 30px; }
-  h1 a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: transparent url("../../img/naver_logo.png") no-repeat 50% 50%/contain; }
-    h1 a:hover, h1 a:focus {
-      transform: scale(1.1);
-      outline: none; }
+h1 { float: left; width: 190px; height: 50px; margin-right: 30px; }
 
-.search_box {
-  position: relative;
-  float: left;
-  width: 480px;
-  height: 50px;
-  border: 2px solid #03cf5d;
-  box-sizing: border-box;
-  background-color: #fff; }
-  .search_box form {
-    width: 405px;
-    height: 100%; }
-  .search_box fieldset {
-    width: 100%;
-    height: 100%; }
-  .search_box input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    font-size: 18px; }
-    .search_box input:hover, .search_box input:focus {
-      background-color: #fff;
-      outline: none; }
+h1 a { display: block; width: 100%; height: 100%; background: transparent url("../../img/naver_logo.png") no-repeat 50% 50%/contain; }
 
-.keyboard {
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  width: 20px;
-  height: 20px; }
-  .keyboard button {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: transparent url("../../img/keyboard.png") no-repeat 50% 50%/contain; }
-    .keyboard button:hover, .keyboard button:focus {
-      outline: none;
-      transform: scale(1.1); }
-    .keyboard button.action {
-      background: transparent url("../../img/keyboard_act.png") no-repeat 50% 50%/contain;
-      outline: none; }
+h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
-.autokey {
-  position: absolute;
-  top: 22px;
-  right: 11px;
-  width: 0px;
-  height: 0px;
-  border-top: 5px solid #03cf5d;
-  border-bottom: 5px none;
-  border-right: 5px solid transparent;
-  border-left: 5px solid  transparent; }
-  .autokey.action {
-    transform: rotate(180deg); }
-  .autokey button {
-    display: block;
-    width: 15px;
-    height: 15px;
-    transform: translate(-50%, -50%);
-    background-color: transparent; }
-    .autokey button:hover, .autokey button:focus {
-      outline: none; }
+.search_box { position: relative; float: left; width: 480px; height: 50px; border: 2px solid #03cf5d; box-sizing: border-box; background-color: #fff; }
 
-.search_icon {
-  float: left;
-  width: 50px;
-  height: 50px;
-  background-color: #03cf5d; }
-  .search_icon button {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: transparent url("../../img/search_icon.png") no-repeat 50% 50%/55% auto; }
-    .search_icon button:hover, .search_icon button:focus {
-      background-size: 70% auto;
-      outline: none; }
+.search_box form { width: 405px; height: 100%; }
 
-#lowerhead {
-  width: 100%;
-  height: 50px;
-  background-color: #fff;
-  border-bottom: 1px solid #d1d8e4;
-  box-sizing: border-box; }
+.search_box fieldset { width: 100%; height: 100%; }
 
-.lowhead_wrap {
-  position: relative;
-  width: 1080px;
-  height: 100%;
-  margin: auto;
-  line-height: 50px; }
+.search_box input { width: 100%; height: 100%; border: none; font-size: 18px; }
 
-#gnb {
-  width: 805px;
-  height: auto; }
-  #gnb ul {
-    float: left;
-    height: auto;
-    font-weight: bold;
-    font-size: 16px; }
-    #gnb ul:first-of-type {
-      width: 330px;
-      color: #03cf5d; }
-      #gnb ul:first-of-type li:nth-child(6) {
-        text-transform: capitalize; }
-      #gnb ul:first-of-type li:nth-child(7) span {
-        display: block;
-        float: left;
-        width: 15px;
-        height: 15px;
-        margin-top: 18px;
-        background: url("../../img/tv_icon.png") no-repeat 50% 50%/contain; }
-    #gnb ul:nth-of-type(2) {
-      width: 380px; }
-    #gnb ul li {
-      float: left;
-      margin-left: 7px;
-      padding: 0 1px; }
-      #gnb ul li a:hover, #gnb ul li a:focus {
-        outline: none;
-        font-style: italic; }
-  #gnb .moreBtn {
-    position: relative;
-    float: left;
-    width: 70px;
-    height: auto;
-    margin-left: 25px; }
-    #gnb .moreBtn:before {
-      content: " ";
-      position: absolute;
-      top: 15px;
-      left: -8px;
-      width: 0;
-      height: 18px;
-      border-left: 1px solid #f1f3f6; }
-    #gnb .moreBtn button {
-      display: block;
-      float: left;
-      width: 100%;
-      height: 100%;
-      margin-top: 14px;
-      text-indent: -8px;
-      background-color: transparent;
-      color: inherit;
-      font-size: 15px;
-      font-weight: bold; }
-      #gnb .moreBtn button span {
-        display: block;
-        position: relative;
-        left: 0;
-        top: 0;
-        z-index: 5;
-        width: 0;
-        height: 0; }
-        #gnb .moreBtn button span:before {
-          content: " ";
-          display: inline-block;
-          position: absolute;
-          top: -15px;
-          left: 52px;
-          border: solid #333;
-          border-width: 0 1px 1px 0;
-          padding: 3px;
-          transform: rotate(40deg); }
+.search_box input:hover, .search_box input:focus { background-color: #fff; outline: none; }
 
-.keyword {
-  float: right;
-  width: 200px;
-  height: 30px;
-  margin-top: 10px;
-  margin-left: 30px;
-  overflow: hidden; }
-  .keyword .keymore {
-    display: block;
-    position: relative;
-    left: 0;
-    top: 0;
-    z-index: 5;
-    width: 0;
-    height: 0; }
-    .keyword .keymore:before {
-      content: " ";
-      display: inline-block;
-      position: absolute;
-      top: 10px;
-      left: 180px;
-      border: solid #333;
-      border-width: 0 1px 1px 0;
-      padding: 3px;
-      transform: rotate(40deg); }
-  .keyword ol {
-    position: relative;
-    top: -49px;
-    left: 0;
-    width: 100%;
-    height: auto;
-    margin-top: -10px; }
-    .keyword ol li {
-      width: 100%;
-      height: 49px;
-      /* border: 1px solid #333; */
-      line-height: 49px; }
-      .keyword ol li span {
-        display: block;
-        float: left;
-        width: 22px;
-        height: 49px;
-        text-align: center;
-        font-weight: bold;
-        color: #03cf5d; }
-      .keyword ol li p {
-        float: left;
-        width: 176px;
-        height: 49px; }
+.keyboard { position: absolute; top: 15px; right: 30px; width: 20px; height: 20px; }
 
-#contentBox {
-  width: 1100px;
-  height: auto;
-  min-height: 500px;
-  margin: auto; }
+.keyboard button { display: block; width: 100%; height: 100%; background: transparent url("../../img/keyboard.png") no-repeat 50% 50%/contain; }
 
-#mainConts {
-  float: left;
-  width: 750px;
-  height: auto;
-  min-height: 500px;
-  padding: 10px;
-  box-sizing: border-box; }
+.keyboard button:hover, .keyboard button:focus { outline: none; transform: scale(1.1); }
 
-.mainadv {
-  position: relative;
-  width: 100%;
-  height: 120px;
-  margin-top: 0;
-  border: 1px solid #dee3eb;
-  box-sizing: border-box;
-  background-color: #fff; }
-  .mainadv a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: url("../../img/adv/main_adv.jpg") no-repeat 50% 50%/contain; }
-    .mainadv a:hover, .mainadv a:focus {
-      background-size: 103% auto;
-      outline: none; }
-    .mainadv a .smallvideo {
-      position: relative;
-      width: 180px;
-      height: 100px;
-      padding-top: 25px;
-      box-sizing: border-box;
-      background-color: rgba(51, 51, 51, 0.7);
-      border: 1px #777 solid; }
-      .mainadv a .smallvideo.action {
-        border: 1px #03cf5d solid; }
-      .mainadv a .smallvideo > .load_start {
-        display: block;
-        width: 50px;
-        height: 50px;
-        margin: auto;
-        border-radius: 50px;
-        background: url("../../img/btn_play.png") no-repeat 50% 50%/contain; }
-      .mainadv a .smallvideo > span {
-        display: none;
-        position: absolute;
-        left: 90px;
-        top: 50px;
-        transform: translate(-50%, -50%);
-        z-index: 5;
-        width: 50px;
-        height: 50px;
-        margin: auto;
-        border-radius: 50px;
-        background-color: rgba(255, 255, 255, 0.7);
-        line-height: 50px;
-        text-align: center;
-        font-weight: bold;
-        color: #03cf5d;
-        font-size: 35px;
-        text-shadow: 0 0 10px #fff; }
+.keyboard button.action { background: transparent url("../../img/keyboard_act.png") no-repeat 50% 50%/contain; outline: none; }
 
-.videopop {
-  position: absolute;
-  left: -52px;
-  top: 20px;
-  z-index: 10;
-  width: 100px;
-  height: 70px;
-  font-size: 14px;
-  text-align: center;
-  padding: 15px 0;
-  box-sizing: border-box;
-  font-weight: bold;
-  background: url("../../img/balloon.png") no-repeat 50% 50%/auto 90%; }
-  .videopop p:nth-of-type(2) {
-    display: none; }
-  .videopop em {
-    color: #03cf5d;
-    font-style: normal; }
+.autokey { position: absolute; top: 22px; right: 11px; width: 0px; height: 0px; border-top: 5px solid #03cf5d; border-bottom: 5px none; border-right: 5px solid transparent; border-left: 5px solid  transparent; }
 
-.video {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 5;
-  width: 1080px;
-  height: 600px; }
-  .video .videobtn {
-    position: absolute;
-    top: 10px;
-    right: -50px; }
+.autokey.action { transform: rotate(180deg); }
 
-.newsbox {
-  width: 100%;
-  height: 300px; }
+.autokey button { display: block; width: 15px; height: 15px; transform: translate(-50%, -50%); background-color: transparent; }
 
-.keynews {
-  width: 100%;
-  height: 50px;
-  margin-top: 10px;
-  border: 1px solid #dee3eb;
-  box-sizing: border-box;
-  background-color: #fff; }
+.autokey button:hover, .autokey button:focus { outline: none; }
 
-.catnews {
-  width: 100%;
-  height: 240px;
-  margin-top: 10px;
-  border: 1px solid #dee3eb;
-  box-sizing: border-box;
-  background-color: #fff; }
+.search_icon { float: left; width: 50px; height: 50px; background-color: #03cf5d; }
 
-.categbox {
-  width: 100%;
-  height: 900px;
-  margin-top: 10px;
-  border: 1px solid #dee3eb;
-  box-sizing: border-box;
-  background-color: #fff; }
+.search_icon button { display: block; width: 100%; height: 100%; background: transparent url("../../img/search_icon.png") no-repeat 50% 50%/55% auto; }
 
-.textadv {
-  width: 100%;
-  height: 150px;
-  margin-top: 10px;
-  border: 1px solid #dee3eb;
-  box-sizing: border-box;
-  background-color: #fff; }
-  .textadv ul {
-    width: 100%;
-    height: 100%;
-    padding: 30px 20px;
-    box-sizing: border-box; }
-    .textadv ul li {
-      float: left;
-      width: 50%;
-      height: 100%;
-      font-size: 12px; }
-      .textadv ul li:nth-child(1) div {
-        background: url("../../img/adv/textadv_01.jpg") no-repeat 50% 50%/contain; }
-      .textadv ul li:nth-child(2) div {
-        background: url("../../img/adv/textadv_02.png") no-repeat 50% 50%/contain; }
-      .textadv ul li a {
-        display: block;
-        width: 100%;
-        height: 100%; }
-        .textadv ul li a:hover, .textadv ul li a:focus {
-          outline: none; }
-        .textadv ul li a:hover div, .textadv ul li a:focus div {
-          background-size: 105%; }
-        .textadv ul li a:hover dl, .textadv ul li a:focus dl {
-          text-decoration: underline; }
-      .textadv ul li div {
-        float: left;
-        width: 170px;
-        height: 90px; }
-      .textadv ul li p {
-        float: left;
-        width: 155px;
-        height: 25px;
-        margin-left: 15px;
-        margin-top: 5px;
-        line-height: 25px;
-        color: #03cf5d;
-        font-weight: bold; }
-      .textadv ul li dl {
-        float: left;
-        width: 155px;
-        height: 60px;
-        margin-left: 15px; }
-        .textadv ul li dl dt {
-          font-weight: bold;
-          font-size: 16px; }
-        .textadv ul li dl dd {
-          margin-top: 5px;
-          word-break: keep-all; }
+.search_icon button:hover, .search_icon button:focus { background-size: 70% auto; outline: none; }
 
-#sideConts {
-  float: right;
-  width: 350px;
-  height: auto;
-  min-height: 500px;
-  padding: 10px 10px 10px 0;
-  box-sizing: border-box; }
+#lowerhead { width: 100%; height: 50px; background-color: #fff; border-bottom: 1px solid #d1d8e4; box-sizing: border-box; }
 
-.login {
-  width: 100%;
-  height: 120px;
-  margin-top: 0;
-  border: 1px solid #dee3eb;
-  box-sizing: border-box;
-  background-color: #fff; }
-  .login p {
-    width: 280px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 12px;
-    margin: 5px auto;
-    color: #888; }
-  .login div {
-    width: 280px;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: #03cf5d;
-    text-align: center;
-    line-height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    box-sizing: border-box; }
-    .login div a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      font-weight: bold;
-      font-size: 18px; }
-      .login div a:hover, .login div a:focus {
-        font-size: 20px;
-        color: #fff;
-        outline: none; }
-  .login ul {
-    width: 280px;
-    height: 30px;
-    margin: auto;
-    box-sizing: border-box;
-    font-size: 12px; }
-    .login ul li {
-      float: left; }
-      .login ul li:nth-child(1) {
-        position: relative;
-        margin-right: 4px; }
-      .login ul li:nth-child(1):after {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        left: 37px;
-        width: 2px;
-        height: 2px;
-        border-radius: 2px;
-        background-color: #777; }
-      .login ul li:nth-child(3) {
-        float: right; }
-      .login ul li a:hover, .login ul li a:focus {
-        color: inherit;
-        text-decoration: underline;
-        outline: none; }
+.lowhead_wrap { position: relative; width: 1080px; height: 100%; margin: auto; line-height: 50px; }
 
-.widget {
-  width: 100%;
-  height: 140px;
-  margin-top: 10px;
-  border: 1px solid #dee3eb;
-  box-sizing: border-box;
-  background-color: #fff; }
+#gnb { width: 805px; height: auto; }
 
-.sideadv {
-  width: 100%;
-  height: 150px;
-  margin-top: 10px;
-  border: 1px solid #dee3eb;
-  box-sizing: border-box;
-  background-color: #fff; }
+#gnb ul { float: left; height: auto; font-weight: bold; font-size: 16px; }
 
-.shopping {
-  width: 100%;
-  height: 900px;
-  margin-top: 10px;
-  border: 1px solid #dee3eb;
-  box-sizing: border-box;
-  background-color: #fff; }
+#gnb ul:first-of-type { width: 330px; color: #03cf5d; }
 
-.footadv {
-  width: 100%;
-  height: 150px;
-  margin-top: 10px;
-  border: 1px solid #dee3eb;
-  box-sizing: border-box;
-  background-color: #fff; }
-  .footadv a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url("../../img/adv/foot_adv.jpg") no-repeat 45% 100%/auto 100%; }
-    .footadv a:hover, .footadv a:focus {
-      background-size: auto 103%;
-      outline: none; }
+#gnb ul:first-of-type li:nth-child(6) { text-transform: capitalize; }
 
-#footBox {
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  font-size: 14px; }
-  #footBox a:hover, #footBox a:focus {
-    outline: none;
-    text-decoration: underline; }
+#gnb ul:first-of-type li:nth-child(7) span { display: block; float: left; width: 15px; height: 15px; margin-top: 18px; background: url("../../img/tv_icon.png") no-repeat 50% 50%/contain; }
 
-#upperfoot {
-  width: 100%;
-  height: 45px;
-  border-top: 1px solid #d1d8e4;
-  box-sizing: border-box; }
-  #upperfoot .upfoot_wrap {
-    width: 1080px;
-    height: 100%;
-    margin: auto;
-    line-height: 45px; }
-    #upperfoot .upfoot_wrap > div {
-      float: left; }
-    #upperfoot .upfoot_wrap .notice {
-      font-size: 14px;
-      font-weight: bold; }
-    #upperfoot .upfoot_wrap .moreserv {
-      float: right;
-      margin-right: 20px;
-      font-size: 14px;
-      font-weight: bold; }
-      #upperfoot .upfoot_wrap .moreserv span {
-        display: block;
-        position: relative;
-        left: 0;
-        top: 0;
-        z-index: 5;
-        width: 0;
-        height: 0; }
-        #upperfoot .upfoot_wrap .moreserv span:before {
-          content: " ";
-          display: inline-block;
-          position: absolute;
-          top: -26px;
-          left: 105px;
-          border: solid #333;
-          border-width: 0 2px 2px 0;
-          padding: 3px;
-          transform: rotate(-45deg); }
+#gnb ul:nth-of-type(2) { width: 380px; }
 
-#lowerfoot {
-  width: 100%;
-  height: 110px;
-  border-top: 1px solid #f1f3f6;
-  box-sizing: border-box;
-  /* 650px */ }
-  #lowerfoot .lowfoot_wrap {
-    width: 1080px;
-    height: 100%;
-    margin: auto;
-    padding: 20px 0;
-    box-sizing: border-box; }
-  #lowerfoot .naverper {
-    float: left;
-    width: 730px;
-    height: 100%; }
-    #lowerfoot .naverper dl {
-      width: 100%;
-      height: 25px; }
-      #lowerfoot .naverper dl dt {
-        float: left;
-        width: 90px;
-        text-transform: capitalize;
-        font-size: 14px;
-        font-weight: bold; }
-      #lowerfoot .naverper dl dd {
-        float: left;
-        position: relative;
-        width: auto;
-        color: #888;
-        padding: 0 15px;
-        font-size: 13px;
-        line-height: 25px; }
-        #lowerfoot .naverper dl dd:first-of-type:after {
-          display: none; }
-        #lowerfoot .naverper dl dd:after {
-          content: " ";
-          display: block;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0px;
-          margin: auto;
-          width: 0;
-          height: 14px;
-          border-right: 2px solid #e8e9ec; }
-  #lowerfoot .whale {
-    position: relative;
-    float: right;
-    width: 200px;
-    height: 100%;
-    padding-left: 25px;
-    box-sizing: border-box; }
-    #lowerfoot .whale:after {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      width: 0;
-      height: 50px;
-      border-right: 1px solid #e8e9ec; }
-    #lowerfoot .whale dl {
-      position: relative;
-      width: 100%;
-      height: 100%; }
-      #lowerfoot .whale dl dt {
-        font-weight: bold; }
-      #lowerfoot .whale dl .ftimg {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        width: 60px;
-        height: 60px; }
-        #lowerfoot .whale dl .ftimg a {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background: url("../../img/whale_logo.png") no-repeat 50% 50%/auto 100%; }
-          #lowerfoot .whale dl .ftimg a:hover, #lowerfoot .whale dl .ftimg a:focus {
-            transform: scale(1.1); }
-      #lowerfoot .whale dl dd {
-        margin-top: 5px;
-        color: #888; }
-  #lowerfoot .proj {
-    position: relative;
-    float: right;
-    width: 150px;
-    height: 100%; }
-    #lowerfoot .proj:after {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: -8px;
-      margin: auto;
-      width: 0;
-      height: 50px;
-      border-right: 1px solid #e8e9ec; }
-    #lowerfoot .proj dl {
-      position: relative;
-      width: 100%;
-      height: 100%; }
-      #lowerfoot .proj dl dt {
-        font-weight: bold;
-        text-indent: 15px; }
-      #lowerfoot .proj dl .ftimg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 60px;
-        height: 60px; }
-        #lowerfoot .proj dl .ftimg a {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background: url("../../img/project_logo.png") no-repeat 50% 50%/auto 100%; }
-          #lowerfoot .proj dl .ftimg a:hover, #lowerfoot .proj dl .ftimg a:focus {
-            transform: scale(1.1); }
-      #lowerfoot .proj dl dd {
-        text-indent: 15px;
-        margin-top: 5px;
-        color: #888; }
+#gnb ul li { float: left; margin-left: 7px; padding: 0 1px; }
 
-#fnb {
-  width: 100%;
-  height: 150px;
-  padding: 25px 0;
-  box-sizing: border-box;
-  border-top: 1px solid #f1f3f6; }
-  #fnb .fnb_wrap {
-    width: 1080px;
-    height: 100%;
-    margin: auto; }
-  #fnb ul {
-    width: auto;
-    margin: auto;
-    color: #888; }
-    #fnb ul li {
-      position: relative;
-      float: left;
-      margin-right: 20px; }
-      #fnb ul li:nth-child(5) {
-        font-weight: bold; }
-      #fnb ul li:nth-child(1):after {
-        display: none; }
-      #fnb ul li:after {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: -10px;
-        margin: auto;
-        width: 0;
-        height: 14px;
-        border-right: 2px solid #e8e9ec; }
+#gnb ul li a:hover, #gnb ul li a:focus { outline: none; font-style: italic; }
 
-.copyright {
-  font-weight: bold;
-  text-transform: capitalize; }
-  .copyright span {
-    text-transform: uppercase; }
+#gnb .moreBtn { position: relative; float: left; width: 70px; height: auto; margin-left: 25px; }
 
-.keypopup {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1020;
-  width: 340px;
-  height: 340px;
-  background-color: #fff;
-  border: 1px solid #d1d8e4;
-  box-sizing: border-box;
-  border-bottom: none; }
+#gnb .moreBtn:before { content: " "; position: absolute; top: 15px; left: -8px; width: 0; height: 18px; border-left: 1px solid #f1f3f6; }
 
-.keypopbox {
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  box-sizing: border-box; }
-  .keypopbox h3 {
-    float: left;
-    width: 50%;
-    height: 20px;
-    line-height: 20px;
-    font-size: 15px; }
-  .keypopbox > p {
-    float: left;
-    width: 50%;
-    height: 20px;
-    line-height: 20px;
-    text-align: right;
-    font-size: 12px;
-    color: #888; }
-  .keypopbox .oneto20 {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 270px;
-    border-bottom: 1px solid #f1f3f6; }
-    .keypopbox .oneto20 li {
-      float: left;
-      width: 100%;
-      height: auto; }
-      .keypopbox .oneto20 li:last-child dd {
-        display: none; }
-      .keypopbox .oneto20 li:last-child dl {
-        margin-top: 0; }
-      .keypopbox .oneto20 li:first-child dt {
-        left: 0; }
-      .keypopbox .oneto20 li:last-child dt {
-        right: 0; }
-      .keypopbox .oneto20 li dl {
-        width: 100%;
-        height: auto;
-        margin-top: 44px; }
-        .keypopbox .oneto20 li dl dt {
-          position: absolute;
-          top: 0;
-          width: 50%;
-          height: 25px;
-          margin-top: 10px;
-          border: 1px solid #dee3eb;
-          box-sizing: border-box;
-          background-color: #fff;
-          margin-bottom: 10px;
-          box-sizing: border-box;
-          line-height: 23px;
-          text-align: center;
-          font-size: 14px;
-          background-color: #fff; }
-          .keypopbox .oneto20 li dl dt.action {
-            background-color: #f1f3f6;
-            color: #888; }
-          .keypopbox .oneto20 li dl dt a {
-            display: block;
-            width: 100%;
-            height: 100%; }
-        .keypopbox .oneto20 li dl dd {
-          width: 100%;
-          height: 230px;
-          /* padding-top: 44px; box-sizing:border-box; */ }
-          .keypopbox .oneto20 li dl dd ol {
-            width: 100%;
-            height: 230px;
-            font-size: 14px;
-            line-height: 22px; }
-            .keypopbox .oneto20 li dl dd ol li {
-              width: 100%;
-              height: 22px; }
-              .keypopbox .oneto20 li dl dd ol li span {
-                display: block;
-                float: left;
-                width: 30px;
-                height: 22px;
-                text-align: center;
-                font-weight: bold; }
-              .keypopbox .oneto20 li dl dd ol li a {
-                display: block;
-                float: left;
-                width: 275px;
-                height: 22px; }
-                .keypopbox .oneto20 li dl dd ol li a:hover, .keypopbox .oneto20 li dl dd ol li a:focus {
-                  outline: none;
-                  text-decoration: underline; }
+#gnb .moreBtn button { display: block; float: left; width: 100%; height: 100%; margin-top: 14px; text-indent: -8px; background-color: transparent; color: inherit; font-size: 15px; font-weight: bold; }
 
-.keylower {
-  float: left;
-  width: 100%;
-  height: 25px;
-  font-size: 13px;
-  text-indent: 10px;
-  line-height: 25px;
-  color: #888; }
+#gnb .moreBtn button span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+#gnb .moreBtn button span:before { content: " "; display: inline-block; position: absolute; top: -15px; left: 52px; border: solid #333; border-width: 0 1px 1px 0; padding: 3px; transform: rotate(40deg); }
+
+.keyword { float: right; width: 200px; height: 30px; margin-top: 10px; margin-left: 30px; overflow: hidden; }
+
+.keyword .keymore { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.keyword .keymore:before { content: " "; display: inline-block; position: absolute; top: 10px; left: 180px; border: solid #333; border-width: 0 1px 1px 0; padding: 3px; transform: rotate(40deg); }
+
+.keyword ol { position: relative; top: -49px; left: 0; width: 100%; height: auto; margin-top: -10px; }
+
+.keyword ol li { width: 100%; height: 49px; /* border: 1px solid #333; */ line-height: 49px; }
+
+.keyword ol li span { display: block; float: left; width: 22px; height: 49px; text-align: center; font-weight: bold; color: #03cf5d; }
+
+.keyword ol li p { float: left; width: 176px; height: 49px; }
+
+#contentBox { width: 1100px; height: auto; min-height: 500px; margin: auto; }
+
+#mainConts { float: left; width: 750px; height: auto; min-height: 500px; padding: 10px; box-sizing: border-box; }
+
+.mainadv { position: relative; width: 100%; height: 120px; margin-top: 0; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.mainadv a { display: block; width: 100%; height: 100%; padding: 10px; box-sizing: border-box; background: url("../../img/adv/main_adv.jpg") no-repeat 50% 50%/contain; }
+
+.mainadv a:hover, .mainadv a:focus { background-size: 103% auto; outline: none; }
+
+.mainadv a .smallvideo { position: relative; width: 180px; height: 100px; padding-top: 25px; box-sizing: border-box; background-color: rgba(51, 51, 51, 0.7); border: 1px #777 solid; }
+
+.mainadv a .smallvideo.action { border: 1px #03cf5d solid; }
+
+.mainadv a .smallvideo > .load_start { display: block; width: 52px; height: 52px; margin: auto; border-radius: 50px; background: rgba(255, 255, 255, 0.5) url("../../img/btn_play.png") no-repeat 50% 50%/contain; }
+
+.mainadv a .smallvideo > span { display: none; position: absolute; left: 90px; top: 50px; transform: translate(-50%, -50%); z-index: 5; width: 52px; height: 52px; margin: auto; border-radius: 50px; background-color: rgba(255, 255, 255, 0.7); line-height: 50px; text-align: center; font-weight: bold; color: #03cf5d; box-shadow: 0 0 5px #fff; font-size: 35px; text-shadow: 0 0 10px #fff; }
+
+.videopop { position: absolute; left: -52px; top: 20px; z-index: 10; width: 100px; height: 70px; font-size: 14px; text-align: center; padding: 15px 0; box-sizing: border-box; font-weight: bold; background: url("../../img/balloon.png") no-repeat 50% 50%/auto 90%; }
+
+.videopop p:nth-of-type(2) { display: none; }
+
+.videopop em { color: #03cf5d; font-style: normal; }
+
+.video { display: none; position: absolute; left: 0; top: 0; z-index: 5; width: 1080px; height: 600px; }
+
+.video .videobtn { position: absolute; top: 10px; right: -50px; }
+
+.newsbox { width: 100%; height: 300px; }
+
+.keynews { width: 100%; height: 50px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; line-height: 50px; font-size: 15px; text-align: center; font-weight: bold; }
+
+.keynews span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.keynews span:before { content: " "; display: inline-block; position: absolute; top: -10px; left: 115px; border: solid #333; border-width: 0 1px 1px 0; padding: 2px; transform: rotate(-45deg); }
+
+.yhnews { float: left; width: 100px; height: 100%; background-color: #fee; }
+
+.yhconts { float: left; width: 420px; height: 100%; background-color: #ffe; }
+
+.yhcategory { float: right; width: 200px; height: 100%; background-color: #eff; }
+
+.yhcategory li { float: left; }
+
+.catnews { width: 100%; height: 240px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.categbox { width: 100%; height: 900px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.textadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.textadv ul { width: 100%; height: 100%; padding: 30px 20px; box-sizing: border-box; }
+
+.textadv ul li { float: left; width: 50%; height: 100%; font-size: 12px; }
+
+.textadv ul li:nth-child(1) div { background: url("../../img/adv/textadv_01.jpg") no-repeat 50% 50%/contain; }
+
+.textadv ul li:nth-child(2) div { background: url("../../img/adv/textadv_02.png") no-repeat 50% 50%/contain; }
+
+.textadv ul li a { display: block; width: 100%; height: 100%; }
+
+.textadv ul li a:hover, .textadv ul li a:focus { outline: none; }
+
+.textadv ul li a:hover div, .textadv ul li a:focus div { background-size: 105%; }
+
+.textadv ul li a:hover dl, .textadv ul li a:focus dl { text-decoration: underline; }
+
+.textadv ul li div { float: left; width: 170px; height: 90px; }
+
+.textadv ul li p { float: left; width: 155px; height: 25px; margin-left: 15px; margin-top: 5px; line-height: 25px; color: #03cf5d; font-weight: bold; }
+
+.textadv ul li dl { float: left; width: 155px; height: 60px; margin-left: 15px; }
+
+.textadv ul li dl dt { font-weight: bold; font-size: 16px; }
+
+.textadv ul li dl dd { margin-top: 5px; word-break: keep-all; }
+
+#sideConts { float: right; width: 350px; height: auto; min-height: 500px; padding: 10px 10px 10px 0; box-sizing: border-box; }
+
+.login { width: 100%; height: 120px; margin-top: 0; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.login p { width: 280px; height: 30px; line-height: 30px; font-size: 12px; margin: 5px auto; color: #888; }
+
+.login div { width: 280px; height: 40px; margin: auto; margin-bottom: 10px; background-color: #03cf5d; text-align: center; line-height: 40px; color: #fff; border-radius: 5px; border: 1px solid #ddd; box-sizing: border-box; }
+
+.login div a { display: block; width: 100%; height: 100%; font-weight: bold; font-size: 18px; }
+
+.login div a:hover, .login div a:focus { font-size: 20px; color: #fff; outline: none; }
+
+.login ul { width: 280px; height: 30px; margin: auto; box-sizing: border-box; font-size: 12px; }
+
+.login ul li { float: left; }
+
+.login ul li:nth-child(1) { position: relative; margin-right: 4px; }
+
+.login ul li:nth-child(1):after { content: " "; display: block; position: absolute; top: 0; bottom: 0; margin: auto; left: 37px; width: 2px; height: 2px; border-radius: 2px; background-color: #777; }
+
+.login ul li:nth-child(3) { float: right; }
+
+.login ul li a:hover, .login ul li a:focus { color: inherit; text-decoration: underline; outline: none; }
+
+.widget { width: 100%; height: 140px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.sideadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.shopping { width: 100%; height: 900px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.footadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.footadv a { display: block; width: 100%; height: 100%; background: url("../../img/adv/foot_adv.jpg") no-repeat 45% 100%/auto 100%; }
+
+.footadv a:hover, .footadv a:focus { background-size: auto 103%; outline: none; }
+
+#footBox { width: 100%; height: auto; background-color: #fff; font-size: 14px; }
+
+#footBox a:hover, #footBox a:focus { outline: none; text-decoration: underline; }
+
+#upperfoot { width: 100%; height: 45px; border-top: 1px solid #d1d8e4; box-sizing: border-box; }
+
+#upperfoot .upfoot_wrap { width: 1080px; height: 100%; margin: auto; line-height: 45px; }
+
+#upperfoot .upfoot_wrap > div { float: left; }
+
+#upperfoot .upfoot_wrap .notice { font-size: 14px; font-weight: bold; }
+
+#upperfoot .upfoot_wrap .moreserv { float: right; margin-right: 20px; font-size: 14px; font-weight: bold; }
+
+#upperfoot .upfoot_wrap .moreserv span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+#upperfoot .upfoot_wrap .moreserv span:before { content: " "; display: inline-block; position: absolute; top: -26px; left: 105px; border: solid #333; border-width: 0 2px 2px 0; padding: 3px; transform: rotate(-45deg); }
+
+#lowerfoot { width: 100%; height: 110px; border-top: 1px solid #f1f3f6; box-sizing: border-box; /* 650px */ }
+
+#lowerfoot .lowfoot_wrap { width: 1080px; height: 100%; margin: auto; padding: 20px 0; box-sizing: border-box; }
+
+#lowerfoot .naverper { float: left; width: 730px; height: 100%; }
+
+#lowerfoot .naverper dl { width: 100%; height: 25px; }
+
+#lowerfoot .naverper dl dt { float: left; width: 90px; text-transform: capitalize; font-size: 14px; font-weight: bold; }
+
+#lowerfoot .naverper dl dd { float: left; position: relative; width: auto; color: #888; padding: 0 15px; font-size: 13px; line-height: 25px; }
+
+#lowerfoot .naverper dl dd:first-of-type:after { display: none; }
+
+#lowerfoot .naverper dl dd:after { content: " "; display: block; position: absolute; top: 0; bottom: 0; left: 0px; margin: auto; width: 0; height: 14px; border-right: 2px solid #e8e9ec; }
+
+#lowerfoot .whale { position: relative; float: right; width: 200px; height: 100%; padding-left: 25px; box-sizing: border-box; }
+
+#lowerfoot .whale:after { content: " "; display: block; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; width: 0; height: 50px; border-right: 1px solid #e8e9ec; }
+
+#lowerfoot .whale dl { position: relative; width: 100%; height: 100%; }
+
+#lowerfoot .whale dl dt { font-weight: bold; }
+
+#lowerfoot .whale dl .ftimg { position: absolute; top: 0; right: 25px; width: 60px; height: 60px; }
+
+#lowerfoot .whale dl .ftimg a { display: block; width: 100%; height: 100%; background: url("../../img/whale_logo.png") no-repeat 50% 50%/auto 100%; }
+
+#lowerfoot .whale dl .ftimg a:hover, #lowerfoot .whale dl .ftimg a:focus { transform: scale(1.1); }
+
+#lowerfoot .whale dl dd { margin-top: 5px; color: #888; }
+
+#lowerfoot .proj { position: relative; float: right; width: 150px; height: 100%; }
+
+#lowerfoot .proj:after { content: " "; display: block; position: absolute; top: 0; bottom: 0; left: -8px; margin: auto; width: 0; height: 50px; border-right: 1px solid #e8e9ec; }
+
+#lowerfoot .proj dl { position: relative; width: 100%; height: 100%; }
+
+#lowerfoot .proj dl dt { font-weight: bold; text-indent: 15px; }
+
+#lowerfoot .proj dl .ftimg { position: absolute; top: 0; right: 0; width: 60px; height: 60px; }
+
+#lowerfoot .proj dl .ftimg a { display: block; width: 100%; height: 100%; background: url("../../img/project_logo.png") no-repeat 50% 50%/auto 100%; }
+
+#lowerfoot .proj dl .ftimg a:hover, #lowerfoot .proj dl .ftimg a:focus { transform: scale(1.1); }
+
+#lowerfoot .proj dl dd { text-indent: 15px; margin-top: 5px; color: #888; }
+
+#fnb { width: 100%; height: 150px; padding: 25px 0; box-sizing: border-box; border-top: 1px solid #f1f3f6; }
+
+#fnb .fnb_wrap { width: 1080px; height: 100%; margin: auto; }
+
+#fnb ul { width: auto; margin: auto; color: #888; }
+
+#fnb ul li { position: relative; float: left; margin-right: 20px; }
+
+#fnb ul li:nth-child(5) { font-weight: bold; }
+
+#fnb ul li:nth-child(1):after { display: none; }
+
+#fnb ul li:after { content: " "; display: block; position: absolute; top: 0; bottom: 0; left: -10px; margin: auto; width: 0; height: 14px; border-right: 2px solid #e8e9ec; }
+
+.copyright { font-weight: bold; text-transform: capitalize; }
+
+.copyright span { text-transform: uppercase; }
+
+.keypopup { display: none; position: absolute; top: 0; right: 0; z-index: 1020; width: 340px; height: 340px; background-color: #fff; border: 1px solid #d1d8e4; box-sizing: border-box; border-bottom: none; }
+
+.keypopbox { width: 100%; height: 100%; padding: 15px; box-sizing: border-box; }
+
+.keypopbox h3 { float: left; width: 50%; height: 20px; line-height: 20px; font-size: 15px; }
+
+.keypopbox > p { float: left; width: 50%; height: 20px; line-height: 20px; text-align: right; font-size: 12px; color: #888; }
+
+.keypopbox .oneto20 { position: relative; float: left; width: 100%; height: 270px; border-bottom: 1px solid #f1f3f6; }
+
+.keypopbox .oneto20 li { float: left; width: 100%; height: auto; }
+
+.keypopbox .oneto20 li:last-child dd { display: none; }
+
+.keypopbox .oneto20 li:last-child dl { margin-top: 0; }
+
+.keypopbox .oneto20 li:first-child dt { left: 0; }
+
+.keypopbox .oneto20 li:last-child dt { right: 0; }
+
+.keypopbox .oneto20 li dl { width: 100%; height: auto; margin-top: 44px; }
+
+.keypopbox .oneto20 li dl dt { position: absolute; top: 0; width: 50%; height: 25px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; margin-bottom: 10px; box-sizing: border-box; line-height: 23px; text-align: center; font-size: 14px; background-color: #fff; }
+
+.keypopbox .oneto20 li dl dt.action { background-color: #f1f3f6; color: #888; }
+
+.keypopbox .oneto20 li dl dt a { display: block; width: 100%; height: 100%; }
+
+.keypopbox .oneto20 li dl dd { width: 100%; height: 230px; /* padding-top: 44px; box-sizing:border-box; */ }
+
+.keypopbox .oneto20 li dl dd ol { width: 100%; height: 230px; font-size: 14px; line-height: 22px; }
+
+.keypopbox .oneto20 li dl dd ol li { width: 100%; height: 22px; }
+
+.keypopbox .oneto20 li dl dd ol li span { display: block; float: left; width: 30px; height: 22px; text-align: center; font-weight: bold; }
+
+.keypopbox .oneto20 li dl dd ol li a { display: block; float: left; width: 275px; height: 22px; }
+
+.keypopbox .oneto20 li dl dd ol li a:hover, .keypopbox .oneto20 li dl dd ol li a:focus { outline: none; text-decoration: underline; }
+
+.keylower { float: left; width: 100%; height: 25px; font-size: 13px; text-indent: 10px; line-height: 25px; color: #888; }

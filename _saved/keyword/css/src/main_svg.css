@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+:root {
+    --l : 0;
+    --deg : 0;
+    --result : 0;
+} 
+
+.loading {display:none; position:absolute; left:0; top:0; z-index: 50; text-align:center;}
+.loadingC {stroke-dasharray:var(--l);
+    stroke-dashoffset:var(--l);
+    animation:loading 3s infinite;  
+    filter: drop-shadow( 0 0 10px #fff);
+    box-shadow: 0 0 10px #fff;}
+ 
+@keyframes loading {
+    0% {opacity:0;}
+    100% {opacity:1;
+        stroke-dashoffset:var(--result);}} 
+    
+/*.txt {animation:twinkle 3s infinite;}*/
+
+/* 
+@keyframes twinkle {
+    0% {opacity:0;}
+    50% {opacity:1;}} */
