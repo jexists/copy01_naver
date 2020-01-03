@@ -19,7 +19,7 @@
 @mixin arrow($deg:-45deg, $top:-10px, $left:115px, $bw:1px, $p:2px){
 	display:block; position:relative; left:0; top: 0; 
 	z-index:5; width: 0; height:0;
-  &:before{content: " "; display: inline-block; position: absolute; top:$top; left: $left; border: solid #333;
+  &:before{content: " "; display: inline-block; position: absolute; top:$top; left: $left; border: solid #777;
     border-width: 0 $bw $bw 0; padding: $p; transform:rotate($deg);}}
 
 @mixin footTx{font-size: 14px; font-weight: bold;}

@@ -114,14 +114,16 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
 
 .newsbox{width: 100%; height: 300px;}
 .keynews{width: 100%; height: 50px; @include box; line-height: 50px;
-  font-size: 15px; text-align: center; font-weight: bold;
- span{@include arrow(/* -45deg, 0, 0, 1, 2 */);}}
- .yhnews{float:left; width: 100px; height: 100%; background-color: #fee;}
- .yhconts{float: left; width: 420px;height: 100%; background-color: #ffe;
+  font-size: 14px; text-align: center; font-weight: bold;
+ span{@include arrow(-45deg, -27px, 76px, 1px, 3px);}}
+ /* $deg:-45deg, $top:-10px, $left:115px, $bw:1px, $p:2px */
+ .yhnews{float:left; width: 90px; height: 100%; 
+  padding-right: 10px; background-color: #fee;}
+ .yhconts{float: left; width: 390px; height: 100%; background-color: #ffe;
   ul{
     li{}}}
- .yhcategory{float:right; width: 200px; height: 100%; background-color: #eff;
-  li{float:left;}}
+ .yhcategory{float:right; width: 230px; height: 100%; background-color: #eff;
+  li{float:left; margin-left: 10px;}}
 
 
 .catnews{width: 100%; height: 240px; @include box;}
