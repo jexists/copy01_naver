@@ -80,7 +80,7 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
  .keymore{
   @include arrow(40deg, 10px, 180px, 1px, 3px);}
  ol{position:relative; top:-49px; left:0; width: 100%; height: auto; margin-top: -10px;
-  li{width: 100%; height: 49px; /* border: 1px solid #333; */ line-height: 49px;
+  li{width: 100%; height: 49px; line-height: 49px;
     span{display:block; float: left; width: 22px; height: 49px;
       text-align: center; font-weight: bold; color:$green;}
     p{float: left;width: 176px; height: 49px;}}}}
@@ -118,12 +118,21 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
  span{@include arrow(-45deg, -27px, 76px, 1px, 3px);}}
  /* $deg:-45deg, $top:-10px, $left:115px, $bw:1px, $p:2px */
  .yhnews{float:left; width: 90px; height: 100%; 
-  padding-right: 10px; background-color: #fee;}
- .yhconts{float: left; width: 390px; height: 100%; background-color: #ffe;
-  ul{
-    li{}}}
- .yhcategory{float:right; width: 230px; height: 100%; background-color: #eff;
-  li{float:left; margin-left: 10px;}}
+  padding-right: 10px; 
+ a:hover,a:focus{outline: none; text-decoration: underline;}}
+ .yhconts{overflow:hidden; float: left; width: 390px; height: 100%;  
+  ul{width: 100%; height: auto;
+    li{overflow: hidden; white-space: nowrap; text-overflow:ellipsis;
+      width: 95%; height: 30px; margin-top: 10px;
+      text-align: left; text-indent: 20px; line-height: 30px;
+      a{display: block; width: 100%; height: auto; font-weight: normal;
+        &:hover,&:focus{outline: none; text-decoration: underline;}}}}}
+ .yhcategory{float:right; width: 230px; height: 100%; 
+  li{float:left; margin-left: 10px;
+    a{color:$softT;
+      &:hover,&:focus{color:#333; outline: none;}}
+    &:first-child a{color:$green;
+     &:hover,&:focus{text-decoration: underline;}}}}
 
 
 .catnews{width: 100%; height: 240px; @include box;}

@@ -1,4 +1,5 @@
 
+$url:"../../img/";
 
 .keypopup{display: none; position:absolute; top: 0; right: 0; z-index: 1020;
 	width: 340px; height: 340px; background-color: #fff; border:$innerLine;
@@ -18,7 +19,7 @@
   	dt{position: absolute; top:0; width: 50%; height: 25px; 
   	 @include box(); margin-bottom: 10px;	box-sizing: border-box; line-height: 23px;
   		text-align: center; font-size: 14px; background-color: #fff;
-  	&.action{background-color: $softB; color:$softT;}
+  	&.action{background-color: $keyup; color:$softT;}
   	 a{display: block; width: 100%; height: 100%;}}
   	dd{width: 100%; height: 230px; /* padding-top: 44px; box-sizing:border-box; */
   	 ol{width: 100%; height: 230px; font-size: 14px; line-height: 22px;
@@ -28,5 +29,14 @@
   	 	a{display: block; float: left; width: 275px; height: 22px;
   	 		&:hover,&:focus{outline: none; text-decoration: underline;}}
   	 	}}}}}}}
-.keylower{float: left; width: 100%; height: 25px; 
-		font-size: 13px; text-indent: 10px; line-height: 25px; color: $softT}
+.keylower{float: left; width: 100%; height: 25px; margin-top: 4px; 
+		font-size: 13px; text-indent: 10px; line-height: 25px; color: $softT;
+ .keydate{float:left; width: auto; height: auto;}
+ a{float:left;
+  &:hover,&:focus{transform:scale(1.1); outline: none;}
+  &:first-of-type{width: 20px; height: 100%; 
+    background:url($url +'main_etc.png') no-repeat 100% 13% /900% auto; }
+  &:last-of-type{float:right; 
+    width: 50px; height: 100%; margin-right: 10px;
+    background:url($url +'main_etc.png') no-repeat 0% 94% /380% auto;
+    .keyarrow{@include arrow(-45deg, 10px, 53px, 1px, 2px);}}}}  
