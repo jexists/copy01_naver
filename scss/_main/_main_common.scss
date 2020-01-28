@@ -136,6 +136,14 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
 
 
 .catnews{width: 100%; height: 240px; @include box;}
+ .menulist{width: 100%; height: 48px; 
+  >p{float:left; line-height: 48px;}
+  >div{float:right;}}
+  .next{float: right;}
+.newsimage{width: 100%; height: 192px;
+  >li{float:left; width: 120.5px; height: 63px;
+  border-right: 1px solid $border; border-top: 1px solid $border;
+  &:nth-child(6n){border-right: none;}}}
 
 
 .categbox{width: 100%; height: 900px; @include box;}
@@ -178,7 +186,8 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
 .shopping{width: 100%; height: 900px; @include box;}
 .footadv{width: 100%; height: 150px; @include box; 
   a{display: block; width: 100%; height: 100%;
-    background: url($url+"adv/foot_adv.jpg") no-repeat 45% 100% / auto 100%;
+    background-size: auto 100%; background-repeat: no-repeat; background-position: 45% 100%;
+    // background: url($url+"adv/foot_adv_03.jpg") no-repeat 45% 100% / auto 100%;
    &:hover,&:focus{background-size: auto 103%; outline: none;}}}
 
 

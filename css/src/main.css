@@ -189,6 +189,20 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .catnews { width: 100%; height: 240px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 
+.menulist { width: 100%; height: 48px; }
+
+.menulist > p { float: left; line-height: 48px; }
+
+.menulist > div { float: right; }
+
+.next { float: right; }
+
+.newsimage { width: 100%; height: 192px; }
+
+.newsimage > li { float: left; width: 120.5px; height: 63px; border-right: 1px solid #dee3eb; border-top: 1px solid #dee3eb; }
+
+.newsimage > li:nth-child(6n) { border-right: none; }
+
 .categbox { width: 100%; height: 900px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 
 .textadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
@@ -251,7 +265,7 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .footadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 
-.footadv a { display: block; width: 100%; height: 100%; background: url("../../img/adv/foot_adv.jpg") no-repeat 45% 100%/auto 100%; }
+.footadv a { display: block; width: 100%; height: 100%; background-size: auto 100%; background-repeat: no-repeat; background-position: 45% 100%; }
 
 .footadv a:hover, .footadv a:focus { background-size: auto 103%; outline: none; }
 
