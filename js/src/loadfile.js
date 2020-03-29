@@ -12,8 +12,8 @@
 	};
 
 	keywordPopup.load('./temp/keypopup.html',function(){
-		// JsLink('date');
-		// JsLink('keypopup');
+		JsLink('date');
+		JsLink('keypopup');
 	});
 
 	catnews.load('./temp/catnews.html');
