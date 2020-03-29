@@ -261,6 +261,10 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .sideadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 
+.sideadv a { display: block; width: 100%; height: 100%; background-size: 100% auto; background-repeat: no-repeat; background-position: 50% 50%; }
+
+.sideadv a:hover, .sideadv a:focus { background-size: 103% auto; outline: none; }
+
 .shopping { width: 100%; height: 900px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 
 .footadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
