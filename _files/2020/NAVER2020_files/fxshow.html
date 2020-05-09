@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://nv.veta.naver.com/fxshow?su=SU10599&nrefreshx=0 -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>NAVER</title>
+    <script type="text/javascript" src="./jquery-1.8.0.min.js.다운로드"></script>
+    <script type="text/javascript" src="./pc.veta.core.min.js(1).다운로드"></script>
+    <link rel="stylesheet" type="text/css" href="./new_timeboard.min.css">
+</head>
+<body onload="lazyLoading()" marginwidth="0" marginheight="0">
+<div id="da_timeboard">
+    <div class="content">
+        <div id="addiv" class="ad">
+            <a href="https://siape.veta.naver.com/fxclick?eu=EU10041888&amp;calp=-&amp;oj=A4YjrwVVtw%2F3vb8qwaNNS0zL7DX1KOXQwun8bU85CpNqgf64WlInEW2ido7JnIAxdAMJZfHz0IIlAl%2FHLSFoVmenwSt5ybFGUK12YVyVBxY&amp;ac=8084114&amp;src=4385585&amp;br=3154309&amp;evtcd=P901&amp;x_ti=1308&amp;tb=&amp;oid=&amp;sid1=&amp;sid2=&amp;rk=d9d5ac9d41e09360034d44c0e51ee0b9&amp;eltts=LwmtSrnhd2wD7SFgVf8hsA%3D%3D&amp;lu=&amp;brs=Y&amp;" id="ac_banner_a" target="_blank">
+            <img src="./33f4860f333892cd8b83_20200508163651074.jpg" width="1500" height="270" alt="[광고]netmarble 새로운 겜성 MMORPG 스톤에이지 월드 사전 등록 중" border="0" style="width:750px;height:135px;"><div id="da_access" style="position: absolute; top: 50%; left: 50%; width: 154px; height: 58px; margin: -29px 0px 0px -77px; background: url(&quot;https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png&quot;); display: none;"></div></a>
+        </div>
+        <a id="link" name="link" href="javascript:void(0)"></a>
+    </div>
+</div>
+<script type="text/javascript">
+    try {
+        document.domain = "naver.com";
+    } catch (e) {}
+
+    function lazyLoading() {
+        new Nimp(["https://siape.veta.naver.com/fxview?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2F3vb8qwaNNS0zL7DX1KOXQwun8bU85CpNqgf64WlInEW2ido7JnIAxdAMJZfHz0IIlAl%2FHLSFoVmenwSt5ybFGUK12YVyVBxY&ac=8084114&src=4385585&evtcd=P100&x_ti=1308&tb=&oid=&sid1=&sid2=&rk=d9d5ac9d41e09360034d44c0e51ee0b9&eltts=LwmtSrnhd2wD7SFgVf8hsA%3D%3D&brs=Y&&eid=V800"]).log(1);
+        initAd();
+    };
+    function initAd() {
+        setDomByGOLang();
+        initAltForImage();
+        setClickCoordinate();
+    };
+    function setDomByGOLang() {
+        var targetTag = $("#ac_banner_a");
+        var daHtml = "";
+
+        daHtml += "<img src=\"https://ssl.pstatic.net/tveta/libs/1279/1279464/33f4860f333892cd8b83_20200508163651074.jpg\" width=\"1500\" height=\"270\" alt=\"[광고]netmarble 새로운 겜성 MMORPG 스톤에이지 월드 사전 등록 중\" border=\"0\" style=\"width:750px;height:135px;\">";
+
+        targetTag.append(daHtml);
+    };
+    function initAltForImage() {
+        // DA Alternative - Create Access Layer
+        var accessLayer = document.createElement('div');
+        accessLayer.setAttribute('id', 'da_access');
+        accessLayer.style.cssText = 'position:absolute;top:50%;left:50%;width:154px;height:58px;margin:-29px 0 0 -77px;background:url(https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png)';
+        accessLayer.style.display = "none";
+        var oAdDiv = document.getElementById("ac_banner_a");
+        oAdDiv.appendChild(accessLayer);
+
+        // DA Alternative - Focus Action
+        var altLink = document.getElementById("ac_banner_a");
+        var bMousedown = false;
+        altLink.onmousedown = function() {
+            bMousedown = true;
+        };
+        altLink.onfocus = function() {
+            if (!bMousedown) {
+                accessLayer.style.display = "block";
+            }
+        };
+        altLink.onblur = function() {
+              accessLayer.style.display = "none";
+        };
+    };
+    function setClickCoordinate(){
+        if (Da.$$("da_top") !== null) {
+            new naver_corp_da.getClickedCoordinate({
+                adArea: Da.$$("da_top")
+            }).activate();
+        }
+        new naver_corp_da.getClickedCoordinate({
+            adArea: Da.$("addiv"),
+            adType: "image",
+            parentArea: Da.$$("veta_top")
+        }).activate();
+    };
+</script>
+
+<div style="display: none;"></div></body></html>

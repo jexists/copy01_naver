@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://nv.veta.naver.com/fxshow?su=SU10601&nrefreshx=0 -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>NAVER</title>
+    <link rel="stylesheet" type="text/css" href="./common.min.css">
+    <script type="text/javascript" src="./jquery-1.8.0.min.js.다운로드"></script>
+    <script type="text/javascript" src="./pc.veta.core.min.js(1).다운로드"></script>
+    <style type="text/css">
+        /* DA Alternative - Contents Style */
+        #addiv{position:relative}
+        #addiv embed,#addiv object{z-index:20}
+        #addiv #da_alt{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1}
+        #addiv #da_alt.on{z-index:30}
+        #addiv #da_alt a{display:block;overflow:hidden;position:absolute;bottom:0;left:0;width:100%;height:100%}
+        #addiv #da_alt .guide{visibility:hidden;position:absolute;top:50%;left:50%;width:154px;height:58px;margin:-29px 0 0 -77px;background:url(https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png)}
+        #addiv #da_alt.on .guide{visibility:visible}
+    </style>
+</head>
+<body onload="lazyLoading()" marginwidth="0" marginheight="0">
+<div id="addiv">
+    <a href="https://siape.veta.naver.com/fxclick?eu=EU10041892&amp;calp=-&amp;oj=ZagUyei1lSjgqKuWCSjDd0zL7DX1KOXQwun8bU85CpNqgf64WlInEW2ido7JnIAxdAMJZfHz0IIlAl%2FHLSFoVmenwSt5ybFGUK12YVyVBxY&amp;ac=8083378&amp;src=4383727&amp;br=3153521&amp;evtcd=P901&amp;x_ti=1312&amp;tb=&amp;oid=&amp;sid1=&amp;sid2=&amp;rk=6c5e2657e800425f71650988bacedda4&amp;eltts=LwmtSrnhd2wD7SFgVf8hsA%3D%3D&amp;lu=&amp;brs=Y&amp;" id="ac_banner_a" target="_blank">
+    <img src="./71a6f88ef6d2b93c9db1_20200507182708460.png" width="700" height="400" alt="[광고]6월 자동차세 확인 납부를 한번에! 신청하면 2천원 5만원 행운까지" border="0" style="width:350px;height:200px;"><div id="da_access" style="position: absolute; top: 50%; left: 50%; width: 154px; height: 58px; margin: -29px 0px 0px -77px; background: url(&quot;https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png&quot;); display: none;"></div></a>
+</div>
+<a id="link" name="link" href="javascript:void(0)"></a>
+<script type="text/javascript">
+    try {
+        document.domain = "naver.com";
+    } catch (e) {}
+
+    function lazyLoading() {
+        new Nimp(["https://siape.veta.naver.com/fxview?eu=EU10041892&calp=-&oj=ZagUyei1lSjgqKuWCSjDd0zL7DX1KOXQwun8bU85CpNqgf64WlInEW2ido7JnIAxdAMJZfHz0IIlAl%2FHLSFoVmenwSt5ybFGUK12YVyVBxY&ac=8083378&src=4383727&evtcd=P100&x_ti=1312&tb=&oid=&sid1=&sid2=&rk=6c5e2657e800425f71650988bacedda4&eltts=LwmtSrnhd2wD7SFgVf8hsA%3D%3D&brs=Y&&eid=V800"]).log(1);
+        initAd();
+    };
+    function initAd() {
+        setDomByGOLang();
+        initAltForImage();
+        setClickCoordinate();
+    };
+    function setDomByGOLang() {
+        var targetTag = $("#ac_banner_a");
+        var daHtml = "";
+
+        daHtml += "<img src=\"https://ssl.pstatic.net/tveta/libs/1287/1287211/71a6f88ef6d2b93c9db1_20200507182708460.png\" width=\"700\" height=\"400\" alt=\"[광고]6월 자동차세 확인 납부를 한번에! 신청하면 2천원 5만원 행운까지\" border=\"0\" style=\"width:350px;height:200px;\">";
+
+        targetTag.append(daHtml);
+    };
+    function initAltForImage() {
+        // DA Alternative - Create Access Layer
+        var accessLayer = document.createElement('div');
+        accessLayer.setAttribute('id', 'da_access');
+        accessLayer.style.cssText = 'position:absolute;top:50%;left:50%;width:154px;height:58px;margin:-29px 0 0 -77px;background:url(https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png)';
+        accessLayer.style.display = "none";
+        var oAdDiv = document.getElementById("ac_banner_a");
+        oAdDiv.appendChild(accessLayer);
+
+        // DA Alternative - Focus Action
+        var altLink = document.getElementById("ac_banner_a");
+        var bMousedown = false;
+        altLink.onmousedown = function() {
+            bMousedown = true;
+        };
+        altLink.onfocus = function() {
+            if (!bMousedown) {
+                accessLayer.style.display = "block";
+            }
+        };
+        altLink.onblur = function() {
+              accessLayer.style.display = "none";
+        };
+    };
+    function setClickCoordinate(){
+        if (Da.$$("da_brand") !== null) {
+          new naver_corp_da.getClickedCoordinate({
+            adArea: Da.$$("da_brand")
+          }).activate();
+        }
+        new naver_corp_da.getClickedCoordinate({
+            adArea: Da.$("addiv"),
+            adType: "image",
+            parentArea: Da.$$("veta_branding")
+        }).activate();
+    };
+</script>
+
+<div style="display: none;"></div></body></html>

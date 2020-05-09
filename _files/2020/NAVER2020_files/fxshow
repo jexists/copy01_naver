@@ -1,0 +1,57 @@
+(function() {
+  var naver_corp_da = window.naver_corp_da || {};
+
+  var da_dom_id = 'p_main_show_2'
+  var uId = (da_dom_id.length > 0) ? da_dom_id : (typeof nbp_ad !== 'undefined') ? nbp_ad.mobilenetwork.ad_div_id : 'adw_da';
+  var tarEl = NBP_CORP.$(uId);
+
+  var util = naver_corp_da.Util ? new naver_corp_da.Util() : new NBP_CORP.Nimp();
+
+
+  if(tarEl) {
+    /* ActiveView */
+    var ac_end_date = "20581231235959";
+    var ad_end_date = "20581231235959";
+
+    var scroll_target = (typeof da_scroll_target !== 'undefined') ? da_scroll_target.targetEl : window;
+    var orientation_change_time = 500;
+
+    var callback = function () {
+      var url = "https://siape.veta.naver.com/fxview?eu=EU10041855&calp=-&oj=G57krWHJ3bDl1YRLlMizWEzL7DX1KOXQwun8bU85CpNqgf64WlInEW2ido7JnIAxdAMJZfHz0IIlAl%2FHLSFoVmXa0PszdCfIUK12YVyVBxY&ac=7953470&src=4074344&evtcd=V900&x_ti=1255&tb=SHOW_1&oid=&sid1=&sid2=&rk=6bdde323774cafbde0abf7e3ba0f9f00&eltts=7cSCHdjmAsVA8X8ZEPBEKg%3D%3D&brs=Y&&eid=V900&x_ev=";
+      var x_ev = '';
+      try {
+        var target = NBP_CORP.$(uId);
+        x_ev = (target) ? ((parseInt(target.getBoundingClientRect().height || target.offsetHeight, 10) === 0) ? '000' : '111') : '000';
+      } catch(e) {
+        x_ev = '000';
+      } finally {
+        url += x_ev;
+        util.log(url);
+      }
+    };
+
+    var callbackForInValid = function () {};
+
+    naver_corp_da.activeViews[uId] = naver_corp_da.activeViews[uId] || null;
+
+
+    if(naver_corp_da.activeViews[uId]){
+      naver_corp_da.activeViews[uId].clearActiveView();
+      naver_corp_da.activeViews[uId] = null;
+    }
+
+    naver_corp_da.activeViews[uId] = new naver_corp_da.ActiveView({
+     adDivId : uId,
+      acEndDate : ac_end_date,
+      adEndDate : ad_end_date,
+      scrollTarget : scroll_target,
+      orientationChangeTime : orientation_change_time,
+      activeViewTime : 1000,
+      activeViewPercentage : 0.5,
+      callback : callback,
+      callbackForInValid : callbackForInValid
+    });
+
+    naver_corp_da.activeViews[uId].checkActiveView();
+  }
+})();
