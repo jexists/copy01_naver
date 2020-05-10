@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://nv.veta.naver.com/fxshow?su=SU10078&nrefreshx=0 -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>NAVER</title>
+    <link rel="stylesheet" type="text/css" href="./common.min.css">
+    <style type="text/css">
+        /* DA Alternative - Contents Style */
+        #addiv{position:relative}
+        #addiv embed,#addiv object{z-index:20}
+        #addiv #da_alt{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1}
+        #addiv #da_alt.on{z-index:30}
+        #addiv #da_alt a{display:block;overflow:hidden;position:absolute;bottom:0;left:0;width:100%;height:100%}
+        #addiv #da_alt .guide{visibility:hidden;position:absolute;top:50%;left:50%;width:154px;height:58px;margin:-29px 0 0 -77px;background:url(https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png)}
+        #addiv #da_alt.on .guide{visibility:visible}
+    </style>
+<script type="text/javascript" src="./jquery-1.8.0.min.js(1).다운로드"></script><script type="text/javascript" src="./CSSPlugin.min.js(1).다운로드"></script><script type="text/javascript" src="./EasePack.min.js(1).다운로드"></script><script type="text/javascript" src="./TweenLite.min.js(1).다운로드"></script><script type="text/javascript" src="./rollingboard_imagerolling_332_flexunit.min.js.다운로드"></script></head>
+<body onload="lazyLoading()" marginwidth="0" marginheight="0">
+<div id="addiv"></div>
+<a id="link" name="link" href="javascript:void(0)"></a>
+<script type="text/template" id="basicPlayerTmpl">
+    <div class="image_rolling_area">
+        <a href="<<clickLog>>" class="image_rolling_link" target="_blank">
+            <div class="image_area" data-role="rollingWrapper">
+                    <img src="<<imageSrc1>>" width="332" height="150" alt="<<altText>>">
+                <img src="<<imageSrc2>>" width="332" height="150">
+                <img src="<<imageSrc3>>" width="332" height="150">
+                <img src="<<imageSrc4>>" width="332" height="150">
+                </div>
+        </a>
+    </div>
+</script>
+<script type="text/javascript" src="./pc.veta.core.min.js(2).다운로드"></script>
+<script type="text/javascript">
+    try {
+        document.domain = "naver.com";
+    } catch (e) {}
+
+
+    function lazyLoading() {
+        var sImageserver = "https://ssl.pstatic.net/tveta/libs";
+
+        loadScripts([
+            sImageserver + "/external/js/jquery-1.8.0.min.js?20180423",
+            sImageserver + "/external/js/CSSPlugin.min.js?20180423",
+            sImageserver + "/external/js/EasePack.min.js?20180423",
+            sImageserver + "/external/js/TweenLite.min.js?20180423",
+            ":::ENV:::" === "dev" ?
+                sImageserver + "/assets/js/pc/main/rollingboard_imagerolling_332_flexunit.js?20180423"
+                : sImageserver + "/assets/js/pc/main/min/rollingboard_imagerolling_332_flexunit.min.js?20180425"
+
+        ], function() {
+            // ACK IMP
+            new Nimp(["https://nv.veta.naver.com/fxview?eu=EU10000119&calp=-&oj=bbC87fref33rj2dgUP792lSZisnjXWIoJrTQQOWONqxs4fv2oqydz%2FW1YEqVwubmAQMCMuhPEN1k33z3y5eC5u%2FE3szj%2BIWLlWkk9I6QY6k&ac=8001600&src=4190986&evtcd=P100&x_ti=1274&tb=&oid=&sid1=&sid2=&rk=ad6bfa30f7a5c86a708994c489ba08e3&eltts=bhLt3pjhE1f5ZlcHphUrYA%3D%3D&brs=Y&&eid=V800"]).log(1);
+            initAd();
+        });
+    }
+
+    function loadScripts(urlArr, callback) {
+        var loadingCount = 0;
+        var resourceCnt = urlArr.length;
+
+        for(var i in urlArr) {
+            naver_corp_da.loadScript(urlArr[i], function() {
+                loadingCount++;
+                if(loadingCount === resourceCnt) callback();
+            });
+        }
+    }
+
+    function initAd() {
+        var info = {
+            cssSrc: "https://ssl.pstatic.net/tveta/libs/assets/css/pc/main/min/rollingboard_imagerolling_332.min.css?20180427",
+            adInfoImgSrc: "https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png",
+            basic: {
+                creativeData: {
+                    clickLog: "https://nv.veta.naver.com/fxclick?eu=EU10000119&calp=-&oj=bbC87fref33rj2dgUP792lSZisnjXWIoJrTQQOWONqxs4fv2oqydz%2FW1YEqVwubmAQMCMuhPEN1k33z3y5eC5u%2FE3szj%2BIWLlWkk9I6QY6k&ac=8001600&src=4190986&br=3063534&evtcd=P901&x_ti=1274&tb=&oid=&sid1=&sid2=&rk=ad6bfa30f7a5c86a708994c489ba08e3&eltts=bhLt3pjhE1f5ZlcHphUrYA%3D%3D&lu=&brs=Y&",
+                    imageSrc1: "https://ssl.pstatic.net/tveta/libs/1272/1272505/776708323cd9672d236c_20200110105955162.jpg",
+                    imageSrc2: "https://ssl.pstatic.net/tveta/libs/1272/1272505/1c67aaf1af2628e7a9c3_20200110105957740.jpg",
+                    imageSrc3: "https://ssl.pstatic.net/tveta/libs/1272/1272505/b3d8ecbe27ae90f40c8c_20200110110000334.jpg",
+                    imageSrc4: "https://ssl.pstatic.net/tveta/libs/1272/1272505/8fad5f7c3267827bf7c7_20200110110002498.jpg",
+                    altText: "[광고]푸르지오 SK VIEW 수원의 중심에서 미래의 중심으로 매교역 푸르지오 SK VIEW 2월 오픈 예정 1800-4844",
+                },
+                pattern: ["<<", ">>"]
+            },
+            noSupport: {
+                creativeData: {
+                    imageSrc: "https://ssl.pstatic.net/tveta/libs/1272/1272505/8fad5f7c3267827bf7c7_20200110110002498.jpg",
+                    clickLog: "https://nv.veta.naver.com/fxclick?eu=EU10000119&calp=-&oj=bbC87fref33rj2dgUP792lSZisnjXWIoJrTQQOWONqxs4fv2oqydz%2FW1YEqVwubmAQMCMuhPEN1k33z3y5eC5u%2FE3szj%2BIWLlWkk9I6QY6k&ac=8001600&src=4190986&br=3063534&evtcd=P901&x_ti=1274&tb=&oid=&sid1=&sid2=&rk=ad6bfa30f7a5c86a708994c489ba08e3&eltts=bhLt3pjhE1f5ZlcHphUrYA%3D%3D&lu=&brs=Y&",
+                    altText: "[광고]푸르지오 SK VIEW 수원의 중심에서 미래의 중심으로 매교역 푸르지오 SK VIEW 2월 오픈 예정 1800-4844"
+                }
+            }
+        };
+
+        var imageRolling = new RollingBoardImageRolling(info);
+        imageRolling.initAd();
+
+       if (Da.$$("da_brand") !== null) {
+           new naver_corp_da.getClickedCoordinate({
+               adArea: Da.$$("da_brand")
+           }).activate();
+       }
+
+       new naver_corp_da.getClickedCoordinate({
+           adArea: Da.$("addiv"),
+           adType: "image",
+           parentArea: Da.$$("veta_branding")
+       }).activate();
+    }
+</script>
+
+<div style="display: none;"></div></body></html>

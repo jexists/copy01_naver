@@ -141,9 +141,24 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
   >div{float:right;}}
   .next{float: right;}
 .newsimage{width: 100%; height: 192px;
-  >li{float:left; width: 120.5px; height: 63px;
+  >li{position: relative; float:left; width: 120.5px; height: 63px;
   border-right: 1px solid $border; border-top: 1px solid $border;
-  &:nth-child(6n){border-right: none;}}}
+  &:nth-child(6n){border-right: none;}
+    a{display: flex; width: 100%; height: 100%;
+      &:hover {outline: none; 
+      .newshover{display: block;}}
+    img{width: 70%; height: auto; margin: auto;}
+    .newshover{display: none;
+      position: absolute; width: 100%; height: 100%;
+      padding: 16px 12px; box-sizing: border-box;
+      background-color: #ddd;
+      div {padding: 5px; border: 1px solid #777;
+        background-color: #fff; font-size: 0.75rem;}
+     .subscribe{float: left;}
+     .toread{float: left; border-left: none;}}
+    
+
+}}}
 
 
 .categbox{width: 100%; height: 900px; @include box;}
