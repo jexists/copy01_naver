@@ -140,8 +140,8 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
   >p{float:left; line-height: 48px;}
   >div{float:right;}}
   .next{float: right;}
-.newsimage{width: 100%; height: 192px;
-  >li{position: relative; float:left; width: 120.5px; height: 63px;
+.newsimage{width: 100%; height: 192px; border-top: solid #fff 1px;
+  >li{position: relative; float:left; width: 120.5px; height: 62px;
   border-right: 1px solid $border; border-top: 1px solid $border;
   &:nth-child(6n){border-right: none;}
     a{display: flex; width: 100%; height: 100%;
@@ -150,9 +150,9 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
     img{width: 70%; height: auto; margin: auto;}
     .newshover{display: none;
       position: absolute; width: 100%; height: 100%;
-      padding: 16px 12px; box-sizing: border-box;
-      background-color: #ddd;
-      div {padding: 5px; border: 1px solid #777;
+      padding: 18px 12px; box-sizing: border-box;
+      background-color: #f7f7f7;
+      div {padding: 5px; border: 1px solid $borderB;
         background-color: #fff; font-size: 0.75rem;}
      .subscribe{float: left;}
      .toread{float: left; border-left: none;}}
