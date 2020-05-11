@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <!-- main.html -->
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="웹페이지 실습에 따른 목차구성">
   <meta name="keyword" content="html, css, js, web, design, 웹디자인">
@@ -11,304 +13,439 @@
   <meta name="generator" content="illustrator, photoshop, sublimetext">
 
   <!-- link ===================================== -->
-   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
-   <link rel="stylesheet" href="../css/base/reset.css">
-   <link rel="stylesheet" href="../css/base/common.css">
-   <link rel="stylesheet" href="../font/fontawesome/css/all.min.css">
-   <link rel="stylesheet" href="../css/src/main.css">
-   <link rel="stylesheet" href="../css/src/main_svg.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../font/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/src/main.css">
+  <link rel="stylesheet" href="../css/src/main_svg.css">
 
-   <!--[if lte IE 9]>
+  <!--[if lte IE 9]>
       <script src="./ie/html5shiv-3.7.3/dist/html5shiv.min.js"> </script>
       <script src="../ie/PIE-1.0.0/PIE.js"></script>
       <script src="../ie/Respond-1.4.2/dest/respond.min.js"></script>
    <![endif]-->
 
   <!-- link favicon ============================= -->
-   <link rel="shortcut icon" type="image/png" href="../favicon.png">
+  <link rel="shortcut icon" type="image/png" href="../favicon.png">
   <!-- link touch ============================= -->
-   <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
 
-   <title>NAVER - 포폴</title>
+  <title>NAVER - 포폴</title>
 </head>
-<body>
- <noscript>
-   <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다. <br />
-   자바스크립트의 기능을 활성화 해주세요.</p>
-   <p><a href="http://enable-javascript.com/ko/" target="_blank">
-   브라우저에서 자바스크립트 활성화하는 방법</a></p>
- </noscript>
-<!-- layout=================== -->
-<!-- <h1><a href="./content.html">목차</a></h1> -->
-<div id="wrap">
-  <header id="headBox">
-    <div id="upperhead">
-      <div class="uphead_wrap">
-       <h1><a href="#"><span class="hd">네이버</span></a></h1>
-       <div class="search_box">
-         <form action="#" method="get">
-           <fieldset>
-             <legend>네이버 검색창입니다.</legend>
-             <label for="searchBar" class="hd"> 검색창</label>
-             <input type="text" id="searchBar" name="searchBar" value="" / autofocus>
-           </fieldset>
-         </form>
-       <div class="keyboard">
-         <button type="button"></button>
-       </div>
-       <div class="autokey">
-         <button type="button"></button>
-         <div></div>
-       </div>
-       </div>
-       <div class="search_icon">
-         <button type="button"></button>
-       </div>
-      <div id="lnb">
-        <ul>
-          <li><a href="#">네이버를 시작페이지로</a> <span></span></li>
-          <li><a href="#"><span>쥬</span><span>니</span><span>어</span><span>네이버</span></a></li>
-          <li><a href="#"><span>해피</span><span>빈</span></a></li>
-        </ul>
-      </div>
-      </div>
-    </div>
-    <div id="lowerhead">
-      <div class="lowhead_wrap">
-      <div id="gnb">
-        <ul>
-          <li><a href="#">메일</a></li>
-          <li><a href="#">카페</a></li>
-          <li><a href="#">블로그</a></li>
-          <li><a href="#">지식iN</a></li>
-          <li><a href="#">쇼핑</a></li>
-          <li><a href="#">pay</a></li>
-          <li><a href="#"><span></span>TV</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">사전</a></li>
-          <li><a href="#">뉴스</a></li>
-          <li><a href="#">증권</a></li>
-          <li><a href="#">부동산</a></li>
-          <li><a href="#">지도</a></li>
-          <li><a href="#">영화</a></li>
-          <li><a href="#">뮤직</a></li>
-          <li><a href="#">책</a></li>
-          <li><a href="#">웹툰</a></li>
-        </ul>
-        <div class="moreBtn">
-          <button type="button">더보기<span></span></button>
-        </div>
-      </div>
-      <div class="keyword">
-        <div class="keymore"></div>
-        <ol>
-          <li><span>1</span><p></p></li>
-          <li><span>2</span><p></p></li>
-          <li><span>3</span><p></p></li>
-          <li><span>4</span><p></p></li>
-          <li><span>5</span><p></p></li>
-          <li><span>6</span><p></p></li>
-          <li><span>7</span><p></p></li>
-          <li><span>8</span><p></p></li>
-          <li><span>9</span><p></p></li>
-          <li><span>10</span><p></p></li>
-          <li><span>11</span><p></p></li>
-          <li><span>12</span><p></p></li>
-          <li><span>13</span><p></p></li>
-          <li><span>14</span><p></p></li>
-          <li><span>15</span><p></p></li>
-          <li><span>16</span><p></p></li>
-          <li><span>17</span><p></p></li>
-          <li><span>18</span><p></p></li>
-          <li><span>19</span><p></p></li>
-          <li><span>20</span><p></p></li>
-        </ol>
-      </div>
-      <div class="keypopup">
-        
-      </div>
-      </div>
-    </div>
-  </header>
-  <main id="contentBox" class="cf">
-    <section id="mainConts">
-      <div class="mainadv">
-        <a href="#">
-          <div class="smallvideo">
-            <svg class="loading" width="180" height="100">
-              <circle class="loadingC" cx="90" cy="50" r="25" stroke="#00c73c" stroke-width="3" fill="transparent" stroke-dasharray="1" stroke-dashoffset="0" data-per="100"></circle>
-            </svg>
-            <div class="load_start" tabindex="0"></div>
-            <span class="videonum">3</span>
-          </div>
-        </a>
-        <div class="video"> <!-- w560 h315 -->
 
-          <div class="videobtn"><button type="button" class="closebtn">종료</button></div>
-          <iframe width="1080" height="600" src="https://www.youtube.com/embed/TwjuG6-84WI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="videopop">
-          <p><em>마우스</em>를 올려 <br /> 동영상을</p>
-          <p><em>HD 고화질</em>로 <br /> 감상하세요!</p>
-        </div>
-      </div>
-      <div class="newsbox">
-        <div class="keynews">
-          <div class="yhnews"><a href="#">연합뉴스</a><span></span></div>
-          <div class="yhconts">
+<body>
+  <noscript>
+    <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다. <br />
+      자바스크립트의 기능을 활성화 해주세요.</p>
+    <p><a href="http://enable-javascript.com/ko/" target="_blank">
+        브라우저에서 자바스크립트 활성화하는 방법</a></p>
+  </noscript>
+  <!-- layout=================== -->
+  <!-- <h1><a href="./content.html">목차</a></h1> -->
+  <div id="wrap">
+    <header id="headBox">
+      <div id="upperhead">
+        <div class="uphead_wrap">
+          <h1><a href="#"><span class="hd">네이버</span></a></h1>
+          <div class="search_box">
+            <form action="#" method="get">
+              <fieldset>
+                <legend>네이버 검색창입니다.</legend>
+                <label for="searchBar" class="hd"> 검색창</label>
+                <input type="text" id="searchBar" name="searchBar" value="" / autofocus>
+              </fieldset>
+            </form>
+            <div class="keyboard">
+              <button type="button"></button>
+            </div>
+            <div class="autokey">
+              <button type="button"></button>
+              <div></div>
+            </div>
+          </div>
+          <div class="search_icon">
+            <button type="button"></button>
+          </div>
+          <div id="lnb">
             <ul>
-              <li><a href="#">전국 대부분 미세먼지 "좋음"... 일교차 주위 </a></li>
-              <li><a href="#">2서울 아파트값 상승폭 2주 연속 둔화</a></li>
-              <li><a href="#">3"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
-              <li><a href="#">4"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
-              <li><a href="#">5"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
-              <li><a href="#">6"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
-              <li><a href="#">7"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
-              <li><a href="#">8"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
-              <li><a href="#">9"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
-              <li><a href="#">10"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
+              <li><a href="#">네이버를 시작페이지로</a> <span></span></li>
+              <li><a href="#"><span>쥬</span><span>니</span><span>어</span><span>네이버</span></a></li>
+              <li><a href="#"><span>해피</span><span>빈</span></a></li>
             </ul>
           </div>
-          <ul class="yhcategory">
-            <li><a href="#">네이버뉴스</a></li>
-            <li><a href="#">연예</a></li>
-            <li><a href="#">스포츠</a></li>
-            <li><a href="#">경제</a></li>
+        </div>
+      </div>
+      <div id="lowerhead">
+        <div class="lowhead_wrap">
+          <div id="gnb">
+            <ul>
+              <li><a href="#">메일</a></li>
+              <li><a href="#">카페</a></li>
+              <li><a href="#">블로그</a></li>
+              <li><a href="#">지식iN</a></li>
+              <li><a href="#">쇼핑</a></li>
+              <li><a href="#">pay</a></li>
+              <li><a href="#"><span></span>TV</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">사전</a></li>
+              <li><a href="#">뉴스</a></li>
+              <li><a href="#">증권</a></li>
+              <li><a href="#">부동산</a></li>
+              <li><a href="#">지도</a></li>
+              <li><a href="#">영화</a></li>
+              <li><a href="#">뮤직</a></li>
+              <li><a href="#">책</a></li>
+              <li><a href="#">웹툰</a></li>
+            </ul>
+            <div class="moreBtn">
+              <button type="button">더보기<span></span></button>
+            </div>
+          </div>
+          <div class="keyword">
+            <div class="keymore"></div>
+            <ol>
+              <li><span>1</span>
+                <p></p>
+              </li>
+              <li><span>2</span>
+                <p></p>
+              </li>
+              <li><span>3</span>
+                <p></p>
+              </li>
+              <li><span>4</span>
+                <p></p>
+              </li>
+              <li><span>5</span>
+                <p></p>
+              </li>
+              <li><span>6</span>
+                <p></p>
+              </li>
+              <li><span>7</span>
+                <p></p>
+              </li>
+              <li><span>8</span>
+                <p></p>
+              </li>
+              <li><span>9</span>
+                <p></p>
+              </li>
+              <li><span>10</span>
+                <p></p>
+              </li>
+              <li><span>11</span>
+                <p></p>
+              </li>
+              <li><span>12</span>
+                <p></p>
+              </li>
+              <li><span>13</span>
+                <p></p>
+              </li>
+              <li><span>14</span>
+                <p></p>
+              </li>
+              <li><span>15</span>
+                <p></p>
+              </li>
+              <li><span>16</span>
+                <p></p>
+              </li>
+              <li><span>17</span>
+                <p></p>
+              </li>
+              <li><span>18</span>
+                <p></p>
+              </li>
+              <li><span>19</span>
+                <p></p>
+              </li>
+              <li><span>20</span>
+                <p></p>
+              </li>
+            </ol>
+          </div>
+          <div class="keypopup">
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="contentBox" class="cf">
+      <section id="mainConts">
+        <div class="mainadv">
+          <a href="#">
+            <div class="smallvideo">
+              <svg class="loading" width="180" height="100">
+                <circle class="loadingC" cx="90" cy="50" r="25" stroke="#00c73c" stroke-width="3" fill="transparent"
+                  stroke-dasharray="1" stroke-dashoffset="0" data-per="100"></circle>
+              </svg>
+              <div class="load_start" tabindex="0"></div>
+              <span class="videonum">3</span>
+            </div>
+          </a>
+          <div class="video">
+            <!-- w560 h315 -->
+
+            <div class="videobtn"><button type="button" class="closebtn">종료</button></div>
+            <iframe width="1080" height="600" src="https://www.youtube.com/embed/TwjuG6-84WI"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="videopop">
+            <p><em>마우스</em>를 올려 <br /> 동영상을</p>
+            <p><em>HD 고화질</em>로 <br /> 감상하세요!</p>
+          </div>
+        </div>
+        <div class="newsbox">
+          <div class="keynews">
+            <div class="yhnews"><a href="#">연합뉴스</a><span></span></div>
+            <div class="yhconts">
+              <ul>
+                <li><a href="#">전국 대부분 미세먼지 "좋음"... 일교차 주위 </a></li>
+                <li><a href="#">2서울 아파트값 상승폭 2주 연속 둔화</a></li>
+                <li><a href="#">3"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
+                <li><a href="#">4"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
+                <li><a href="#">5"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
+                <li><a href="#">6"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
+                <li><a href="#">7"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
+                <li><a href="#">8"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
+                <li><a href="#">9"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
+                <li><a href="#">10"2주 1회 이상 온라인서 가공식품 구입" 1년새 2배로 </a></li>
+              </ul>
+            </div>
+            <ul class="yhcategory">
+              <li><a href="#">네이버뉴스</a></li>
+              <li><a href="#">연예</a></li>
+              <li><a href="#">스포츠</a></li>
+              <li><a href="#">경제</a></li>
+            </ul>
+          </div>
+          <div class="catnews">
+
+          </div>
+        </div>
+        <div class="categbox">
+          <div class="categbox_header">
+            <div class="categmenu">
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <ul class="categlist">
+              <li><a href="#">리빙</a></li>
+              <li><a href="#">푸드</a></li>
+              <li><a href="#">스포츠</a></li>
+              <li><a href="#">자동차</a></li>
+              <li><a href="#">패션뷰티</a></li>
+              <li><a href="#">부모i</a></li>
+              <li><a href="#">건강</a></li>
+              <li><a href="#">웹툰</a></li>
+              <li><a href="#">게임</a></li>
+              <li><a href="#">TV연예</a></li>
+              <li><a href="#">뮤직</a></li>
+            </ul>
+            <div class="categbtn">
+              <button type="button" class="next">
+                <p class="hd">다음</p><span></span>
+              </button>
+              <button type="button" class="prev">
+                <p class="hd">이전</p><span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="textadv">
+          <ul>
+            <li><a href="#">
+                <div></div>
+                <p>온스테이지 2.0</p>
+                <dl>
+                  <dt>김훨</dt>
+                  <dd>깊은 호흡의 노래 <br />
+                    오랜 진동을 남기는 뮤지션</dd>
+                </dl>
+              </a></li>
+            <li><a href="#">
+                <div></div>
+                <p>칸아카데미 한국</p>
+                <dl>
+                  <dt>칸아카데미 X 픽사</dt>
+                  <dd>픽사 애니메이션 <br />
+                    제작 방법을 배워보아요!</dd>
+                </dl>
+              </a></li>
           </ul>
         </div>
-        <div class="catnews">
-          
+      </section>
+      <section id="sideConts">
+        <div class="login">
+          <p>네이버를 더 안전하고 편리하게 이용하세요.</p>
+          <div><a href="#">NAVER 로그인</a></div>
+          <ul>
+            <li><a href="#">아이디</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+        </div>
+        <div class="widget">
+          <div class="weatherwidget">
+            <div class="widgetheader">
+              <p class="today"><a href="#"></a></p>
+              <p class="place"><a href="#">수원시 매산로 1가</a><span></span></p>
+              <div class="weatherbtn">
+                <button type="button" class="next">
+                  <p class="hd">다음</p><span></span>
+                </button>
+                <button type="button" class="prev">
+                  <p class="hd">이전</p><span></span>
+                </button>
+              </div>
+              <div class="catnum"><span>1</span>/5</div>
+            </div>
+            <div class="widgetbody">
+              <a href="#">
+                <ul class="weather">
+                  <li class="tempicon"><span class="hd">날씨아이콘</span></li>
+                  <li class="tempinfo">
+                    <div class="tempcurrent"><span>10</span>°C</div>
+                    <div class="temp">
+                      <span class="templower"><span>4</span>°</span>/
+                      <span class="temphighter"><span>9</span>°</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="textcurrent">어제보다 3° 높아요</p>
+                    <p class="dust">미세먼지 <span>좋음</span></p>
+                  </li>
+                </ul>
+              </a>
+            </div>
+            <div class="widgetfooter">
+              <p><a href="#">날씨</a></p>
+              <p><a href="#">실시간 기상 정보 확인하기</a></p>
+              <p><a href="#">주간예보</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="sideadv">
+          <a href="#"></a>
+        </div>
+
+        <div class="shopping">
+          <div class="shopping_header">
+            <h6><a href="#">쇼핑</a></h6>
+            <ul>
+              <li class="act"><a href="#">상품</a></li>
+              <li><a href="#">쇼핑몰</a></li>
+              <li><a href="#">men</a></li>
+            </ul>
+          </div>
+          <!-- <div class="shopping_contents">
+            
+          </div> -->
+          <div class="mall_list">
+            <ul>
+              <li><a href="#">G마켓</a></li>
+              <li><a href="#">옥션</a></li>
+              <li><a href="#">11번가</a></li>
+              <li><a href="#">위메프</a></li>
+              <li><a href="#">티몬</a></li>
+              <li><a href="#">이마트몰</a></li>
+              <li><a href="#">신세계몰</a></li>
+              <li><a href="#">올리브영</a></li>
+              <li><a href="#">GS샵</a></li>
+              <li><a href="#">롯데닷컴</a></li>
+              <li><a href="#">롯데i몰</a></li>
+              <li><a href="#">CJmall</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footadv">
+          <a href="#"></a>
+        </div>
+      </section>
+    </main>
+    <footer id="footBox">
+      <div id="upperfoot">
+        <div class="upfoot_wrap">
+          <div class="notice"><a href="#">공지사항</a></div>
+          <div class="moreserv"><a href="#">서비스전체보기</a><span></span></div>
         </div>
       </div>
-      <div class="categbox">
-        
-      </div>
-      <div class="textadv">
-        <ul>
-          <li><a href="#">
-            <div></div>
-            <p>온스테이지 2.0</p>
+      <div id="lowerfoot">
+        <div class="lowfoot_wrap">
+          <div class="proj">
             <dl>
-              <dt>김훨</dt>
-              <dd>깊은 호흡의 노래 <br />
-              오랜 진동을 남기는 뮤지션</dd>
+              <dt>프로젝트 꽃</dt>
+              <dd class="ftimg"><a href="#"></a></dd>
+              <dd><a href="#">바로가기</a></dd>
             </dl>
-          </a></li>
-          <li><a href="#">
-            <div></div>
-            <p>칸아카데미 한국</p>
+          </div>
+          <div class="whale">
             <dl>
-              <dt>칸아카데미 X 픽사</dt>
-              <dd>픽사 애니메이션 <br/>
-              제작 방법을 배워보아요!</dd>
+              <dt>웨일 브라우저</dt>
+              <dd class="ftimg"><a a href="#"></a></dd>
+              <dd><a href="#">다운받기</a></dd>
             </dl>
-          </a></li>
-        </ul>
+          </div>
+          <div class="naverper">
+            <dl class="cf">
+              <dt>creators</dt>
+              <dd><a href="#">크리에이터</a></dd>
+              <dd><a href="#">스몰비즈니스</a></dd>
+            </dl>
+            <dl class="cf">
+              <dt>partners</dt>
+              <dd><a href="#">비즈니스 광고</a></dd>
+              <dd><a href="#">스토어개설</a></dd>
+              <dd><a href="#">지역업체 등록</a></dd>
+            </dl>
+            <dl class="cf">
+              <dt>developers</dt>
+              <dd><a href="#">네이버 개발저센터</a></dd>
+              <dd><a href="#">오픈 API</a></dd>
+              <dd><a href="#">오픈소스</a></dd>
+              <dd><a href="#">네이버 D2</a></dd>
+              <dd><a href="#">네이버 D2SF</a></dd>
+              <dd><a href="#">네이버 랩스</a></dd>
+            </dl>
+          </div>
+
+        </div>
       </div>
-    </section>
-    <section id="sideConts">
-      <div class="login">
-        <p>네이버를 더 안전하고 편리하게 이용하세요.</p>
-        <div><a href="#">NAVER 로그인</a></div>
-        <ul>
-          <li><a href="#">아이디</a></li>
-          <li><a href="#">비밀번호 찾기</a></li>
-          <li><a href="#">회원가입</a></li>
-        </ul>
+      <div id="fnb">
+        <div class="fnb_wrap">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">제휴제안</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">청소년보호정책</a></li>
+            <li><a href="#">네이버정책</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+          <div class="copyright">&copy; <a href="#"><span>naver</span> corp.</a></div>
+        </div>
       </div>
-      <div class="widget">
-        
-      </div>
-      <div class="sideadv">
-        <a href="#"></a>
-      </div>
-      
-      <div class="shopping">
-        
-      </div>
-      <div class="footadv">
-        <a href="#"></a>
-      </div>
-    </section>
-  </main>
-  <footer id="footBox">
-    <div id="upperfoot">
-      <div class="upfoot_wrap">
-       <div class="notice"><a href="#">공지사항</a></div>
-       <div class="moreserv"><a href="#">서비스전체보기</a><span></span></div> 
-      </div>
-    </div>
-    <div id="lowerfoot">
-      <div class="lowfoot_wrap">
-        <div class="proj">
-         <dl>
-           <dt>프로젝트 꽃</dt>
-           <dd class="ftimg"><a href="#"></a></dd>
-           <dd><a href="#">바로가기</a></dd>
-         </dl>
-       </div>
-        <div class="whale">
-         <dl>
-           <dt>웨일 브라우저</dt>
-           <dd class="ftimg"><a a href="#"></a></dd>
-           <dd><a href="#">다운받기</a></dd>
-         </dl>
-       </div>       
-       <div class="naverper">
-         <dl class="cf">
-           <dt>creators</dt>
-           <dd><a href="#">크리에이터</a></dd>
-           <dd><a href="#">스몰비즈니스</a></dd>
-         </dl>
-         <dl class="cf">
-           <dt>partners</dt>
-           <dd><a href="#">비즈니스 광고</a></dd>
-           <dd><a href="#">스토어개설</a></dd>
-           <dd><a href="#">지역업체 등록</a></dd>
-         </dl>
-         <dl class="cf">
-           <dt>developers</dt>
-           <dd><a href="#">네이버 개발저센터</a></dd>
-           <dd><a href="#">오픈 API</a></dd>
-           <dd><a href="#">오픈소스</a></dd>
-           <dd><a href="#">네이버 D2</a></dd>
-           <dd><a href="#">네이버 D2SF</a></dd>
-           <dd><a href="#">네이버 랩스</a></dd>
-         </dl>
-       </div>
-       
-      </div>
-    </div>
-    <div id="fnb">
-      <div class="fnb_wrap">
-      <ul>
-        <li><a href="#">회사소개</a></li>
-        <li><a href="#">인재채용</a></li>
-        <li><a href="#">제휴제안</a></li>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">개인정보처리방침</a></li>
-        <li><a href="#">청소년보호정책</a></li>
-        <li><a href="#">네이버정책</a></li>
-        <li><a href="#">고객센터</a></li>
-      </ul>
-      <div class="copyright">&copy; <a href="#"><span>naver</span> corp.</a></div>
-    </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 
 
-<!-- Script=================== -->
- <script src="../js/base/jquery-3.4.1.min.js"></script>
- <script src="../js/base/jquery-ui.min.js"></script>
- <!-- <script src="../js/src/main.js"></script> -->
- <script src="../js/src/loadfile.js"></script>
- <script src="../js/src/mainadv.js"></script>
- <script src="../js/src/main_svg.js"></script>
- <script src="../js/src/autokey.js"></script>
- <script src="../js/src/randam_adv.js"></script>
- <!-- <script src="../js/src/keyword.js"></script> -->
- <script src="../js/src/randam_adv.js"></script>
+  <!-- Script=================== -->
+  <script src="../js/base/jquery-3.4.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <!-- <script src="../js/src/main.js"></script> -->
+  <script src="../js/src/loadfile.js"></script>
+  <script src="../js/src/mainadv.js"></script>
+  <script src="../js/src/main_svg.js"></script>
+  <script src="../js/src/autokey.js"></script>
+  <script src="../js/src/randam_adv.js"></script>
+  <!-- <script src="../js/src/keyword.js"></script> -->
+  <!-- <script src="../js/src/newsimage.js"></script> -->
 </body>
+
 </html>

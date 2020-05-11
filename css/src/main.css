@@ -191,9 +191,53 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .menulist { width: 100%; height: 48px; }
 
-.menulist > p { float: left; line-height: 48px; }
+.menulist .newsstand { width: 100px; padding-right: 5px; }
 
-.menulist > div { float: right; }
+.menulist .newsstand span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.menulist .newsstand span:before { content: " "; display: inline-block; position: absolute; top: -27px; left: 88px; border: solid #777; border-width: 0 1px 1px 0; padding: 3px; transform: rotate(-45deg); }
+
+.menulist .allpress { width: 80px; padding-right: 20px; text-align: left; }
+
+.menulist .mynews { position: relative; text-transform: uppercase; color: #888; }
+
+.menulist .mynews a:hover { text-decoration: none; color: #333; }
+
+.menulist .mynews::after, .menulist .mynews:after { content: " "; width: 0; height: 30%; position: absolute; top: 0; bottom: 0; left: -17px; margin: auto; border: 1px solid #e8e9ec; }
+
+.menulist > p { float: left; height: 48px; line-height: 48px; font-size: 14px; text-align: center; font-weight: bold; }
+
+.menulist > p a:hover, .menulist > p a:focus { outline: none; text-decoration: underline; }
+
+.menulist > div { float: right; height: 100%; }
+
+.menulist > div.newsbtn { border-left: 1px solid #e8e9ec; }
+
+.menulist > div.newsbtn .next { border-left: 1px solid #e8e9ec; width: 48px; }
+
+.menulist > div.newsbtn .next span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.menulist > div.newsbtn .next span:before { content: " "; display: inline-block; position: absolute; top: -4px; left: 8px; border: solid #777; border-width: 0 2px 2px 0; padding: 5px; transform: rotate(-45deg); }
+
+.menulist > div.newsbtn .prev span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.menulist > div.newsbtn .prev span:before { content: " "; display: inline-block; position: absolute; top: -4px; left: 14px; border: solid #777; border-width: 0 2px 2px 0; padding: 5px; transform: rotate(-225deg); }
+
+.menulist > div.newsbtn button { display: block; width: 48px; height: 100%; background-color: transparent; color: #888; }
+
+.menulist > div.newsbtn button:hover span:before { border: #00c73c solid; border-width: 0 2px 2px 0; padding: 5px; }
+
+.menulist > div.newsset button { width: 40px; text-align: center; line-height: 48px; margin-right: 10px; background-color: transparent; font-size: 0.9rem; text-shadow: 0 0 1px #111; color: #fff; }
+
+.menulist > div.newsset button:hover { color: #888; }
+
+.menulist > div.newsmenu { line-height: 48px; }
+
+.menulist > div.newsmenu button { width: 30px; height: 100%; font-size: 0.9rem; background-color: transparent; color: #dee3eb; margin-left: 2px; }
+
+.menulist > div.newsmenu button:hover { color: #888; }
+
+.menulist > div.newsmenu button.act { color: #777; }
 
 .next { float: right; }
 
@@ -220,6 +264,32 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 .newsimage > li a .newshover .toread { float: left; border-left: none; }
 
 .categbox { width: 100%; height: 900px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.categbox .categbox_header { width: 100%; height: 45px; border-bottom: 1px solid #e8e9ec; }
+
+.categbox .categmenu { float: left; width: 45px; height: 45px; border-right: 1px solid #e8e9ec; text-align: center; line-height: 45px; font-size: 1.25rem; color: #777; }
+
+.categbox .categmenu a { display: block; width: 100%; height: 100%; }
+
+.categbox .categmenu a:hover { outline: none; color: #333; }
+
+.categbox .categlist { display: flex; float: left; }
+
+.categbox .categlist li { float: left; }
+
+.categbox .categbtn { float: right; }
+
+.categbox .categbtn button { width: 45px; height: 45px; background-color: transparent; border-left: 1px solid #e8e9ec; }
+
+.categbox .categbtn button:hover span:before { border: #00c73c solid; border-width: 0 2px 2px 0; padding: 5px; }
+
+.categbox .categbtn .prev span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.categbox .categbtn .prev span:before { content: " "; display: inline-block; position: absolute; top: -5px; left: 12px; border: solid #777; border-width: 0 2px 2px 0; padding: 5px; transform: rotate(-225deg); }
+
+.categbox .categbtn .next span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.categbox .categbtn .next span:before { content: " "; display: inline-block; position: absolute; top: -5px; left: 8px; border: solid #777; border-width: 0 2px 2px 0; padding: 5px; transform: rotate(-45deg); }
 
 .textadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 
@@ -275,6 +345,86 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .widget { width: 100%; height: 140px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 
+.widget .weatherwidget { width: 100%; height: 100%; }
+
+.widget .weatherwidget .widgetheader { width: 100%; height: 34px; border-bottom: 1px solid #e8e9ec; line-height: 34px; font-size: 14px; text-align: center; }
+
+.widget .weatherwidget .widgetheader p { float: left; margin-left: 20px; }
+
+.widget .weatherwidget .widgetheader p a:hover { outline: none; text-decoration: underline; }
+
+.widget .weatherwidget .widgetheader .today { position: relative; font-weight: bold; }
+
+.widget .weatherwidget .widgetheader .today:after { content: " "; width: 0; height: 36%; position: absolute; top: 0; bottom: 0; right: -8px; margin: auto; border-left: 1px solid #dee3eb; }
+
+.widget .weatherwidget .widgetheader .place { font-size: 12px; color: #888; margin-left: 16px; }
+
+.widget .weatherwidget .widgetheader .place span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.widget .weatherwidget .widgetheader .place span:before { content: " "; display: inline-block; position: absolute; top: -19px; left: 105px; border: solid #777; border-width: 0 1px 1px 0; padding: 2px; transform: rotate(-45deg); }
+
+.widget .weatherwidget .widgetheader div { float: right; }
+
+.widget .weatherwidget .widgetheader .weatherbtn button { width: 33px; height: 33px; background-color: transparent; border-left: 1px solid #e8e9ec; }
+
+.widget .weatherwidget .widgetheader .weatherbtn button:hover span:before { border: #00c73c solid; border-width: 0 1px 1px 0; padding: 3px; }
+
+.widget .weatherwidget .widgetheader .weatherbtn .next span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.widget .weatherwidget .widgetheader .weatherbtn .next span:before { content: " "; display: inline-block; position: absolute; top: -3px; left: 4px; border: solid #777; border-width: 0 1px 1px 0; padding: 3px; transform: rotate(-45deg); }
+
+.widget .weatherwidget .widgetheader .weatherbtn .prev span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.widget .weatherwidget .widgetheader .weatherbtn .prev span:before { content: " "; display: inline-block; position: absolute; top: -3px; left: 8px; border: solid #777; border-width: 0 1px 1px 0; padding: 3px; transform: rotate(-225deg); }
+
+.widget .weatherwidget .widgetheader .catnum { padding-right: 10px; color: #888; }
+
+.widget .weatherwidget .widgetheader .catnum span { color: #333; font-weight: bold; }
+
+.widget .weatherwidget .widgetbody { width: 100%; height: 74px; }
+
+.widget .weatherwidget .widgetbody a { display: block; width: 100%; height: 74px; padding: 10px; box-sizing: border-box; }
+
+.widget .weatherwidget .widgetbody a:hover { outline: none; }
+
+.widget .weatherwidget .widgetbody a:hover .tempicon { transform: scale(1.1); }
+
+.widget .weatherwidget .widgetbody ul { width: 100%; }
+
+.widget .weatherwidget .widgetbody ul li { float: left; margin-left: 10px; }
+
+.widget .weatherwidget .widgetbody ul .tempicon { width: 56px; height: 56px; background: #ff0 url("../../img/ ") no-repeat 45% 100%/auto 100%; }
+
+.widget .weatherwidget .widgetbody ul .tempinfo { width: 50px; line-height: 1; }
+
+.widget .weatherwidget .widgetbody ul .tempinfo .tempcurrent { font-size: 12px; height: 33px; padding-bottom: 5px; }
+
+.widget .weatherwidget .widgetbody ul .tempinfo .tempcurrent span { font-size: 30px; vertical-align: -13px; }
+
+.widget .weatherwidget .widgetbody ul .tempinfo .temp { font-size: 14px; color: #888; }
+
+.widget .weatherwidget .widgetbody ul .tempinfo .temp .templower { color: #1e96fc; margin-left: 5px; }
+
+.widget .weatherwidget .widgetbody ul .tempinfo .temp .temphighter { color: #fe1a1a; margin-left: -2px; }
+
+.widget .weatherwidget .widgetbody ul .textcurrent { font-size: 15px; font-weight: bold; padding-top: 10px; }
+
+.widget .weatherwidget .widgetbody ul .dust { padding-top: 9px; font-size: 12px; }
+
+.widget .weatherwidget .widgetbody ul .dust span { color: #1e96fc; }
+
+.widget .weatherwidget .widgetfooter { width: 100%; padding-left: 20px; font-size: 12px; }
+
+.widget .weatherwidget .widgetfooter p { float: left; }
+
+.widget .weatherwidget .widgetfooter p:nth-of-type(1) { color: #1e96fc; margin-right: 10px; }
+
+.widget .weatherwidget .widgetfooter p:nth-of-type(3) { position: relative; margin-left: 17px; color: #888; }
+
+.widget .weatherwidget .widgetfooter p:nth-of-type(3):after { content: " "; width: 0; height: 70%; position: absolute; top: 0; bottom: 0; left: -8px; margin: auto; border-left: 1px solid #dee3eb; }
+
+.widget .weatherwidget .widgetfooter a:hover { outline: none; text-decoration: underline; }
+
 .sideadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 
 .sideadv a { display: block; width: 100%; height: 100%; background-size: 100% auto; background-repeat: no-repeat; background-position: 50% 50%; }
@@ -282,6 +432,52 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 .sideadv a:hover, .sideadv a:focus { background-size: 103% auto; outline: none; }
 
 .shopping { width: 100%; height: 900px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
+
+.shopping .shopping_header { width: 100%; height: 45px; border-bottom: 1px solid #e8e9ec; }
+
+.shopping .shopping_header h6 { float: left; width: 80px; font-size: 14px; text-align: center; font-weight: bold; line-height: 45px; }
+
+.shopping .shopping_header h6 a { display: block; width: 100%; height: 100%; }
+
+.shopping .shopping_header h6 a:hover { font-size: 16px; outline: none; }
+
+.shopping .shopping_header ul { float: right; font-size: 14px; text-align: center; font-weight: bold; text-transform: uppercase; line-height: 45px; }
+
+.shopping .shopping_header ul li { position: relative; float: left; height: 100%; color: #888; padding-left: 5px; padding-right: 5px; margin-right: 5px; }
+
+.shopping .shopping_header ul li.act a { color: #fb5a59 !important; }
+
+.shopping .shopping_header ul li.act a::after { content: " "; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background-color: #fb5a59; }
+
+.shopping .shopping_header ul li a { display: block; width: 100%; height: 100%; }
+
+.shopping .shopping_header ul li a:hover { color: #333; outline: none; }
+
+.shopping .mall_list { height: 60px; border-bottom: 1px solid #e8e9ec; margin-left: 16px; margin-right: 16px; padding-top: 6px; box-sizing: border-box; }
+
+.shopping .mall_list ul li { float: left; font-size: 12px; margin: 2px; padding: 2px 6px; position: relative; }
+
+.shopping .mall_list ul li::after { content: "·"; position: absolute; top: 1px; right: -3px; }
+
+.shopping .mall_list ul li:nth-child(6)::after { content: " "; }
+
+.shopping .mall_list ul li:nth-child(7) { margin: 1px; padding: 2px 4px; }
+
+.shopping .mall_list ul li:nth-child(8) { margin: 1px; padding: 2px 4px; }
+
+.shopping .mall_list ul li:nth-child(9) { margin: 1px; padding: 2px 4px; }
+
+.shopping .mall_list ul li:nth-child(10) { margin: 1px; padding: 2px 4px; }
+
+.shopping .mall_list ul li:nth-child(11) { margin: 1px; padding: 2px 4px; }
+
+.shopping .mall_list ul li:nth-child(12) { margin: 1px; padding: 2px 4px; }
+
+.shopping .mall_list ul li:nth-child(12)::after { content: " "; }
+
+.shopping .mall_list ul li a { display: block; width: 100%; height: 100%; }
+
+.shopping .mall_list ul li a:hover { outline: none; text-decoration: underline; }
 
 .footadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 

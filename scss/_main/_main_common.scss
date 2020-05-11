@@ -137,8 +137,34 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
 
 .catnews{width: 100%; height: 240px; @include box;}
  .menulist{width: 100%; height: 48px; 
-  >p{float:left; line-height: 48px;}
-  >div{float:right;}}
+  .newsstand{width: 100px; padding-right: 5px;
+     span{@include arrow(-45deg, -27px, 88px, 1px, 3px);}}
+  .allpress{width: 80px; padding-right: 20px; text-align: left;} 
+  .mynews{position:relative; text-transform: uppercase; color: $softT;
+    a:hover{text-decoration: none; color: #333;}
+    &::after,&:after{content:" "; width: 0; height: 30%;
+    position: absolute; top:0; bottom:0; left:-17px; margin: auto;
+    border: $sideLine1}}
+  >p{float:left; height: 48px; line-height: 48px;
+    font-size: 14px; text-align: center; font-weight: bold;
+    a:hover,a:focus{outline: none; text-decoration: underline;}}
+  >div{float:right; height: 100%;
+    &.newsbtn{border-left: $sideLine1;
+      .next {border-left: $sideLine1; width: 48px;
+      span{@include arrow(-45deg, -4px, 8px, 2px, 5px);}}
+      .prev span{@include arrow(-225deg, -4px, 14px, 2px, 5px);}
+      button{display: block; width: 48px; height: 100%; 
+      background-color: transparent; color: $softT;
+      &:hover span:before{border: $green solid; border-width: 0 2px 2px 0; padding: 5px;}}}
+    &.newsset button{width: 40px; text-align: center; line-height: 48px;
+       margin-right: 10px; background-color: transparent; font-size: 0.9rem;
+       text-shadow: 0 0 1px #111; color: #fff;
+       &:hover{color: $softT;}}
+    &.newsmenu{line-height: 48px;
+      button{width: 30px; height: 100%; font-size: 0.9rem;
+        background-color: transparent; color: $border; margin-left: 2px;
+        &:hover{color: $softT;}
+      &.act{color:#777}}}}}
   .next{float: right;}
 .newsimage{width: 100%; height: 192px; border-top: solid #fff 1px;
   >li{position: relative; float:left; width: 120.5px; height: 62px;
@@ -157,11 +183,30 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
      .subscribe{float: left;}
      .toread{float: left; border-left: none;}}
     
-
 }}}
 
 
-.categbox{width: 100%; height: 900px; @include box;}
+.categbox{width: 100%; height: 900px; @include box;
+  .categbox_header{width: 100%; height: 45px; border-bottom: $sideLine1;}
+    .categmenu{float: left; width: 45px; height: 45px; 
+      border-right: $sideLine1; text-align: center; line-height: 45px;
+      font-size: 1.25rem; color: #777;
+      a{display: block; width: 100%; height: 100%;
+      &:hover{outline: none; color: #333;}}}
+    .categlist{display:flex; float: left;
+     li{float: left;}}
+    .categbtn{float: right;
+     button {width: 45px; height: 45px; background-color: transparent;
+       border-left: $sideLine1;
+       &:hover span:before{border: $green solid; border-width: 0 2px 2px 0; padding: 5px;}}
+      .prev span{@include arrow(-225deg, -5px, 12px , 2px, 5px);}
+      .next span{@include arrow(-45deg, -5px, 8px , 2px, 5px);}}
+}
+
+
+
+
+
 .textadv{width: 100%; height: 150px; @include box;
  ul{width: 100%; height: 100%; padding: 30px 20px; box-sizing:border-box;
   li{float: left; width: 50%; height: 100%; font-size: 12px;
@@ -196,7 +241,61 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
    &:nth-child(3){float: right;}
   a:hover,a:focus{color: inherit; text-decoration: underline; outline: none;}}}}
 
-.widget{width: 100%; height: 140px; @include box;}
+.widget{width: 100%; height: 140px; @include box;
+  .weatherwidget{width: 100%; height: 100%;
+   .widgetheader{width: 100%; height: 34px;
+      border-bottom: $sideLine1; line-height: 34px;
+      font-size: 14px; text-align: center;
+      p {float:left; margin-left: 20px;
+      a:hover{outline: none; text-decoration: underline;}}
+      .today{position: relative; font-weight: bold;
+        &:after{content:" "; width: 0; height: 36%; 
+        position: absolute; top: 0; bottom: 0;
+        right: -8px; margin: auto;
+        border-left: 1px solid $border;}}
+      .place{font-size: 12px; color: $softT; margin-left: 16px;
+        span{@include arrow(-45deg, -19px, 105px , 1px, 2px);}}
+       
+      div {float: right;}
+      .weatherbtn{
+        button{width: 33px; height: 33px;
+        background-color: transparent;
+        border-left: $sideLine1;
+        &:hover span:before{border: $green solid; border-width: 0 1px 1px 0; padding: 3px;}}
+        .next span{@include arrow(-45deg, -3px, 4px , 1px, 3px);}
+        .prev span{@include arrow(-225deg, -3px, 8px , 1px, 3px);}}
+      .catnum{padding-right: 10px; color: $softT;
+        span {color: #333; font-weight: bold;}}}
+   .widgetbody{ width: 100%; height: 74px;  
+    a{display:block; width: 100%; height: 74px;
+      padding: 10px; box-sizing: border-box;
+    &:hover{outline: none;
+     .tempicon{transform: scale(1.1);}}}
+     ul{ width: 100%; 
+       li{float: left; margin-left: 10px;}
+       .tempicon{width: 56px; height:56px;
+        background: #ff0 url($url+" ") no-repeat 45% 100% / auto 100%;}
+       .tempinfo{width: 50px; line-height: 1;
+        .tempcurrent{font-size: 12px; height: 33px; padding-bottom: 5px; 
+         span{font-size: 30px; vertical-align: -13px;}}
+        .temp{font-size: 14px; color: $softT;
+        .templower{color: #1e96fc; margin-left: 5px;}
+        .temphighter{color: #fe1a1a; margin-left: -2px;}}}
+       .textcurrent{font-size: 15px; font-weight: bold;
+        padding-top: 10px;}
+       .dust{padding-top:9px; font-size: 12px;
+        span{color: #1e96fc;}}}}
+   .widgetfooter{width: 100%; padding-left: 20px; 
+    font-size: 12px;
+     p{float: left;
+      &:nth-of-type(1){color: #1e96fc; margin-right: 10px;}
+      &:nth-of-type(3){position: relative;
+        margin-left:17px; color: $softT; 
+        &:after{content:" "; width: 0; height: 70%; 
+          position: absolute; top: 0; bottom: 0;
+          left: -8px; margin: auto;
+          border-left: 1px solid $border;}}}
+      a:hover{outline: none; text-decoration: underline;}}}}
 
 .sideadv{width: 100%; height: 150px; @include box;
   a{display: block; width: 100%; height: 100%;
@@ -204,7 +303,48 @@ input{width: 100%; height: 100%; border:none; font-size: 18px;
     // background: url($url+"adv/side_adv_01.jpg") no-repeat 45% 100% / auto 100%;
    &:hover,&:focus{background-size: 103% auto; outline: none;}}}
 
-.shopping{width: 100%; height: 900px; @include box;}
+.shopping{width: 100%; height: 900px; @include box;
+  .shopping_header{width: 100%; height: 45px; border-bottom: $sideLine1;
+    h6{float: left; width: 80px;
+      font-size: 14px; text-align: center; 
+      font-weight: bold; line-height: 45px;
+      a{display: block; width: 100%; height: 100%;
+      &:hover{font-size: 16px; outline: none;}}}
+    ul{float: right; font-size: 14px; text-align: center; 
+      font-weight: bold; text-transform: uppercase;
+      line-height: 45px;
+     li{position: relative;
+       float: left; height: 100%; color: $softT; 
+      padding-left: 5px; padding-right: 5px; margin-right: 5px; 
+      &.act a{color: #fb5a59 !important;
+      &::after{content:" "; position:absolute; bottom: 0; left: 0;
+        width: 100%; height: 3px; background-color: #fb5a59;}}
+      a{display: block; width: 100%; height: 100%;
+       &:hover{color: #333; outline: none;}}}}
+  }
+  // .shopping_contents{
+  //   width: 100%; padding: 10px 20px; box-sizing: border-box;
+  // }
+  .mall_list{height: 60px; border-bottom: $sideLine1; 
+  margin-left: 16px; margin-right: 16px; padding-top: 6px;
+  box-sizing: border-box;
+   ul{
+     li{float:left; font-size: 12px; margin: 2px; padding: 2px 6px;
+      position: relative;
+      &::after{content: "·"; position: absolute;
+      top: 1px; right: -3px;}
+      &:nth-child(6)::after{content: " ";}
+      &:nth-child(7){margin: 1px; padding: 2px 4px;}
+      &:nth-child(8){margin: 1px; padding: 2px 4px;}
+      &:nth-child(9){margin: 1px; padding: 2px 4px;}
+      &:nth-child(10){margin: 1px; padding: 2px 4px;}
+      &:nth-child(11){margin: 1px; padding: 2px 4px;}
+      &:nth-child(12){margin: 1px; padding: 2px 4px;
+       &::after{content: " ";}}
+      a{display: block; width: 100%; height: 100%;
+       &:hover{outline: none; text-decoration: underline;}}}
+   }}
+}
 
 .footadv{width: 100%; height: 150px; @include box; 
   a{display: block; width: 100%; height: 100%;
