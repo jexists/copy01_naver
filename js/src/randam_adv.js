@@ -14,7 +14,7 @@ const side_image = ['adv/side_adv_01.jpg','adv/side_adv_02.jpg','adv/side_adv_03
 // console.log(image[1])
 function Foot_advImage(n){
 	const image = new Image();
-	let foot_imageUrl = `../../img/adv/foot_adv_0${n+1}.jpg`;
+	let foot_imageUrl = `../img/adv/foot_adv_0${n+1}.jpg`;
 	// image.classList.add('bgIamge');
 	// footAdvLink.prepend(image);
 	footAdvLink.style.backgroundImage = "url(" + foot_imageUrl+ ")";
@@ -22,7 +22,7 @@ function Foot_advImage(n){
 
 function Side_advImage(n){
 	const image = new Image();
-	let side_imageUrl = `../../img/adv/side_adv_0${n+1}.jpg`;
+	let side_imageUrl = `../img/adv/side_adv_0${n+1}.jpg`;
 	sideAdvLink.style.backgroundImage = "url(" + side_imageUrl+ ")";
 }
 
