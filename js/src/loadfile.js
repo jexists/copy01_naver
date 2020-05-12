@@ -14,9 +14,10 @@
 	keywordPopup.load('./temp/keypopup.html',function(){
 		JsLink('date');
 		JsLink('keypopup');
-		JsLink('newsimage');
 	});
 
-	catnews.load('./temp/catnews.html');
+	catnews.load('./temp/catnews.html',function(){
+		JsLink('newsimage');
+	});
 
 })(jQuery);

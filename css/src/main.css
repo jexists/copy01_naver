@@ -273,9 +273,19 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .categbox .categmenu a:hover { outline: none; color: #333; }
 
-.categbox .categlist { display: flex; float: left; }
+.categbox .categlist { display: flex; float: left; font-size: 14px; }
 
-.categbox .categlist li { float: left; }
+.categbox .categlist li { float: left; width: auto; height: 45px; }
+
+.categbox .categlist li:first-child a { margin-left: 8px; }
+
+.categbox .categlist li a { display: block; height: 29px; margin-right: 6px; padding: 14px 6px 0 6px; color: #777; font-weight: bold; position: relative; }
+
+.categbox .categlist li a.act { color: #829c00 !important; }
+
+.categbox .categlist li a.act::after { content: " "; position: absolute; bottom: -2px; left: 0; right: 0; margin: auto; width: 100%; height: 0; border-bottom: 3px solid #829c00; }
+
+.categbox .categlist li a:hover { color: #333; outline: none; }
 
 .categbox .categbtn { float: right; }
 
@@ -290,6 +300,32 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 .categbox .categbtn .next span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
 
 .categbox .categbtn .next span:before { content: " "; display: inline-block; position: absolute; top: -5px; left: 8px; border: solid #777; border-width: 0 2px 2px 0; padding: 5px; transform: rotate(-45deg); }
+
+.categbox .categcontents { width: 100%; padding: 16px 0 0 16px; box-sizing: border-box; }
+
+.categbox .categcontents li { float: left; width: 162px; height: 185px; margin-right: 16px; margin-bottom: 16px; font-size: 12px; }
+
+.categbox .categcontents li:nth-child(2) { width: 340px; height: 185px; }
+
+.categbox .categcontents li a { display: block; width: 100%; height: 80%; }
+
+.categbox .categcontents li a:hover { outline: none; }
+
+.categbox .categcontents li a:hover img { transform: scale(1.1); }
+
+.categbox .categcontents li a:hover p { text-decoration: underline; }
+
+.categbox .categcontents li div { height: 100%; height: 100px; overflow: hidden; }
+
+.categbox .categcontents li div img { width: 100%; transition: all 100ms ease; }
+
+.categbox .categcontents li p { margin-top: 8px; margin-bottom: 8px; font-weight: bold; }
+
+.categbox .categcontents li .text { height: 20px; color: #888; }
+
+.categbox .categcontents li .text span { margin-right: 10px; position: relative; }
+
+.categbox .categcontents li .text span::after { content: " "; position: absolute; top: 0; right: -6px; display: block; margin-top: 2px; width: 0; height: 12px; border-right: 2px solid #e8e9ec; }
 
 .textadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 
@@ -393,7 +429,7 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .widget .weatherwidget .widgetbody ul li { float: left; margin-left: 10px; }
 
-.widget .weatherwidget .widgetbody ul .tempicon { width: 56px; height: 56px; background: #ff0 url("../../img/ ") no-repeat 45% 100%/auto 100%; }
+.widget .weatherwidget .widgetbody ul .tempicon { width: 56px; height: 56px; background: url("../../img/w_hot.gif") no-repeat 50% 100%/auto 100%; }
 
 .widget .weatherwidget .widgetbody ul .tempinfo { width: 50px; line-height: 1; }
 
@@ -401,15 +437,15 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .widget .weatherwidget .widgetbody ul .tempinfo .tempcurrent span { font-size: 30px; vertical-align: -13px; }
 
-.widget .weatherwidget .widgetbody ul .tempinfo .temp { font-size: 14px; color: #888; }
+.widget .weatherwidget .widgetbody ul .tempinfo .temp { font-size: 12px; color: #888; }
 
-.widget .weatherwidget .widgetbody ul .tempinfo .temp .templower { color: #1e96fc; margin-left: 5px; }
+.widget .weatherwidget .widgetbody ul .tempinfo .temp .templower { color: #1e96fc; margin-left: 2px; }
 
 .widget .weatherwidget .widgetbody ul .tempinfo .temp .temphighter { color: #fe1a1a; margin-left: -2px; }
 
 .widget .weatherwidget .widgetbody ul .textcurrent { font-size: 15px; font-weight: bold; padding-top: 10px; }
 
-.widget .weatherwidget .widgetbody ul .dust { padding-top: 9px; font-size: 12px; }
+.widget .weatherwidget .widgetbody ul .dust { padding-top: 7px; font-size: 12px; }
 
 .widget .weatherwidget .widgetbody ul .dust span { color: #1e96fc; }
 
@@ -452,6 +488,80 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 .shopping .shopping_header ul li a { display: block; width: 100%; height: 100%; }
 
 .shopping .shopping_header ul li a:hover { color: #333; outline: none; }
+
+.shopping .shopping_nav { width: 100%; height: 36px; padding: 10px 16px 4px 16px; box-sizing: border-box; }
+
+.shopping .shopping_nav .num { float: right; margin-right: 10px; font-size: 12px; line-height: 34px; color: #888; }
+
+.shopping .shopping_nav .num span { font-weight: bold; color: #333; }
+
+.shopping .shopping_btn { width: 46px; height: 23px; float: right; border: 1px solid #e8e9ec; }
+
+.shopping .shopping_btn button { width: 23px; height: 23px; background-color: transparent; }
+
+.shopping .shopping_btn button.next { border-left: 1px solid #e8e9ec; }
+
+.shopping .shopping_btn button:hover span:before { border: #00c73c solid; border-width: 0 1px 1px 0; padding: 3px; }
+
+.shopping .shopping_btn .next span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.shopping .shopping_btn .next span:before { content: " "; display: inline-block; position: absolute; top: -4px; left: 0px; border: solid #777; border-width: 0 1px 1px 0; padding: 3px; transform: rotate(-45deg); }
+
+.shopping .shopping_btn .prev span { display: block; position: relative; left: 0; top: 0; z-index: 5; width: 0; height: 0; }
+
+.shopping .shopping_btn .prev span:before { content: " "; display: inline-block; position: absolute; top: -4px; left: 5px; border: solid #777; border-width: 0 1px 1px 0; padding: 3px; transform: rotate(-225deg); }
+
+.shopping .catnum { padding-right: 10px; color: #888; }
+
+.shopping .catnum span { color: #333; font-weight: bold; }
+
+.shopping .shopping_contents { display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; padding: 0 16px 10px 16px; box-sizing: border-box; }
+
+.shopping .shopping_contents li { width: 94px; margin-bottom: 5px; }
+
+.shopping .shopping_contents li a { display: block; width: 100%; height: 100%; }
+
+.shopping .shopping_contents li a:hover { outline: none; }
+
+.shopping .shopping_contents li a:hover img { transform: scale(1.1); }
+
+.shopping .shopping_contents li a:hover p { text-decoration: underline; }
+
+.shopping .shopping_contents li a div { width: 100%; height: 115px; overflow: hidden; }
+
+.shopping .shopping_contents li a div img { width: 100%; }
+
+.shopping .shopping_contents li a p { height: 56px; padding-top: 8px; box-sizing: border-box; font-size: 12px; text-align: center; }
+
+.shopping .shopping_contents li a p span { display: block; }
+
+.shopping .shopping_text { border-top: 1px solid #e8e9ec; }
+
+.shopping .shopping_text div { width: 100%; height: 50px; padding: 18px 16px 0 16px; box-sizing: border-box; }
+
+.shopping .shopping_text div h6 { float: left; font-size: 13px; font-weight: bold; }
+
+.shopping .shopping_text div h6::before { content: " "; display: block; float: left; width: 3px; height: 14px; margin-top: 2px; margin-right: 5px; background-color: #8974d7; }
+
+.shopping .shopping_text div button { float: right; width: 25px; height: 25px; margin-top: -5px; background-color: #fff; border: 1px solid #e8e9ec; }
+
+.shopping .shopping_text ul { width: 100%; padding: 16px; padding-top: 0; box-sizing: border-box; }
+
+.shopping .shopping_text ul li { width: 100%; height: 16px; margin-top: 4px; }
+
+.shopping .shopping_text ul li a { display: block; width: 100%; height: 100%; }
+
+.shopping .shopping_text ul li a:hover { outline: none; }
+
+.shopping .shopping_text ul li a:hover dt, .shopping .shopping_text ul li a:hover dd { text-decoration: underline; }
+
+.shopping .shopping_text ul li dl { width: 100%; height: 16px; font-size: 12px; }
+
+.shopping .shopping_text ul li dl dt { float: left; color: #8974d7; margin-right: 14px; }
+
+.shopping .shopping_text ul li dl dd { float: left; }
+
+.shopping .shopping_text ul li dl dd span { color: #00ab33; }
 
 .shopping .mall_list { height: 60px; border-bottom: 1px solid #e8e9ec; margin-left: 16px; margin-right: 16px; padding-top: 6px; box-sizing: border-box; }
 
