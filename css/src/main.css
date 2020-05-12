@@ -305,6 +305,8 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .categbox .categcontents li { float: left; width: 162px; height: 185px; margin-right: 16px; margin-bottom: 16px; font-size: 12px; }
 
+.categbox .categcontents li:nth-child(1) { background-color: #829c00; }
+
 .categbox .categcontents li:nth-child(2) { width: 340px; }
 
 .categbox .categcontents li:nth-child(2) a { height: 100%; }
