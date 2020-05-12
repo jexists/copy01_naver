@@ -305,23 +305,33 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .categbox .categcontents li { float: left; width: 162px; height: 185px; margin-right: 16px; margin-bottom: 16px; font-size: 12px; }
 
-.categbox .categcontents li:nth-child(2) { width: 340px; height: 185px; }
+.categbox .categcontents li:nth-child(2) { width: 340px; }
+
+.categbox .categcontents li:nth-child(2) a { height: 100%; }
+
+.categbox .categcontents li:nth-child(2) a div { height: 100%; }
+
+.categbox .categcontents li:nth-child(2) a div img { height: 100%; }
+
+.categbox .categcontents li:nth-child(2) a div p { transform: translateY(-120%); padding: 8px; color: #fff; background-color: rgba(0, 0, 0, 0.3); }
+
+.categbox .categcontents li:nth-child(2) a div p span { display: block; font-weight: bold; }
 
 .categbox .categcontents li a { display: block; width: 100%; height: 80%; }
 
 .categbox .categcontents li a:hover { outline: none; }
 
-.categbox .categcontents li a:hover img { transform: scale(1.1); }
+.categbox .categcontents li a:hover img { transform: scale(1.05); }
 
 .categbox .categcontents li a:hover p { text-decoration: underline; }
 
-.categbox .categcontents li div { height: 100%; height: 100px; overflow: hidden; }
+.categbox .categcontents li div { height: 100%; height: 100px; overflow: hidden; box-shadow: 0 0 1px #333; }
 
 .categbox .categcontents li div img { width: 100%; transition: all 100ms ease; }
 
 .categbox .categcontents li p { margin-top: 8px; margin-bottom: 8px; font-weight: bold; }
 
-.categbox .categcontents li .text { height: 20px; color: #888; }
+.categbox .categcontents li .text { height: 20px; color: #888; box-shadow: none; }
 
 .categbox .categcontents li .text span { margin-right: 10px; position: relative; }
 
@@ -423,7 +433,7 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .widget .weatherwidget .widgetbody a:hover { outline: none; }
 
-.widget .weatherwidget .widgetbody a:hover .tempicon { transform: scale(1.1); }
+.widget .weatherwidget .widgetbody a:hover .tempicon { transform: scale(1.05); }
 
 .widget .weatherwidget .widgetbody ul { width: 100%; }
 
