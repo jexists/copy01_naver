@@ -16,9 +16,9 @@ Cloning [NAVER](https://www.naver.com/) with html,css,Vanila,jQuery
 
 ---
 
-- [ ] Header (logo / search)
+- [x] Header (logo / search)
 
-- [ ] Navigation
+- [x] Navigation
 
 - [x] keyword (실시간 검색어)
 
@@ -26,6 +26,6 @@ Cloning [NAVER](https://www.naver.com/) with html,css,Vanila,jQuery
 
   > SVG 사용
 
-- [ ] Login
+- [x] Login
 
 - [ ] 
