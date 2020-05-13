@@ -148,9 +148,11 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .videopop em { color: #00c73c; font-style: normal; }
 
-.video { display: none; position: absolute; left: 0; top: 0; z-index: 5; width: 1080px; height: 600px; }
+.video { display: none; position: absolute; left: 0; top: 0; z-index: 1000; width: 1080px; height: 600px; }
 
-.video .videobtn { position: absolute; top: 10px; right: -50px; }
+.video .videobtn { position: absolute; top: 10px; right: -44px; }
+
+.video .videobtn button { background-color: transparent; color: #333; font-size: 2rem; }
 
 .newsbox { width: 100%; height: 300px; }
 
@@ -593,7 +595,7 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 .shopping .shopping_text div h6::before { content: " "; display: block; float: left; width: 3px; height: 14px; margin-top: 2px; margin-right: 5px; background-color: #8974d7; }
 
-.shopping .shopping_text div button { float: right; width: 25px; height: 25px; margin-top: -5px; background-color: #fff; border: 1px solid #e8e9ec; }
+.shopping .shopping_text div button { float: right; width: 25px; height: 25px; margin-top: -5px; background-color: #fff; border: 1px solid #e8e9ec; color: #00ab33; }
 
 .shopping .shopping_text ul { width: 100%; padding: 16px; padding-top: 0; box-sizing: border-box; }
 
