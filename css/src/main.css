@@ -98,7 +98,7 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 
 #gnb ul li { float: left; margin-left: 7px; padding: 0 1px; }
 
-#gnb ul li a:hover, #gnb ul li a:focus { outline: none; font-style: italic; }
+#gnb ul li a:hover, #gnb ul li a:focus { outline: none; }
 
 #gnb .moreBtn { position: relative; float: left; width: 70px; height: auto; margin-left: 25px; }
 
@@ -350,6 +350,32 @@ h1 a:hover, h1 a:focus { transform: scale(1.1); outline: none; }
 .categbox .categcontents li .text span { margin-right: 10px; position: relative; }
 
 .categbox .categcontents li .text span::after { content: " "; position: absolute; top: 0; right: -6px; display: block; margin-top: 2px; width: 0; height: 12px; border-right: 2px solid #e8e9ec; }
+
+.livingtv { width: 100%; height: auto; padding: 16px; box-sizing: border-box; }
+
+.livingtv h6 { font-size: 14px; font-weight: bold; line-height: 45px; }
+
+.livingtv ul { width: 100%; font-size: 12px; }
+
+.livingtv ul li { float: left; width: 340px; height: 80px; margin-right: 16px; }
+
+.livingtv ul li:nth-child(2n) { margin-right: 0; }
+
+.livingtv ul li a:hover { outline: none; }
+
+.livingtv ul li a:hover img { transform: scale(1.1); }
+
+.livingtv ul li a:hover p { text-decoration: underline; }
+
+.livingtv ul li a div { overflow: hidden; float: left; width: 115px; height: 70px; margin-right: 10px; box-shadow: 0 0 1px #777; }
+
+.livingtv ul li a div img { width: 100%; }
+
+.livingtv ul li a p { float: left; width: 210px; padding-top: 5px; }
+
+.livingtv ul li a span { display: block; margin-bottom: 10px; }
+
+.livingtv ul li .blog { color: #888; }
 
 .textadv { width: 100%; height: 150px; margin-top: 10px; border: 1px solid #dee3eb; box-sizing: border-box; background-color: #fff; }
 
