@@ -31,10 +31,3 @@
         stroke-dashoffset: var(--result);
     }
 }
-
-/*.txt {animation:twinkle 3s infinite;}*/
-
-/* 
-@keyframes twinkle {
-    0% {opacity:0;}
-    50% {opacity:1;}} */
